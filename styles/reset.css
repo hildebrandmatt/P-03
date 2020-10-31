@@ -1,8 +1,4 @@
 @charset "utf-8";
-/* CSS Document */
-
-/* CSS Reset */
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -28,14 +24,81 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
+/*below are mine*/
+body{
+	display: block;
+	margin: 8px;
+}
+
+div{
+	display: block;
+}
+
+section{
+	display: block;
+}
+
+ul, ol{
+	display: block;
+	margin: 1em 0 1em 0;
+}
+
+th{
+	display: table-cell;
+	font-weight: bold;
+}
+
+p{
+	display: block;
+	margin: 1em 0 1em 0;
+}
+
+h1{
+	font-size: 2em;
+	font-weight: bold;
+	margin: 0.67em 0 0.67em 0;
+}
+
+h2{
+	font-size: 1.5em;
+	font-weight: bold;
+	margin: 0.83em 0 0.83em 0;
+}
+
+h3{
+	font-size: 1.17em;
+	font-weight: bold;
+	margin: 1em 0 1em 0;
+
+}
+
+h4{
+	font-weight: bold;
+	margin: 1.33em 0 1.33em 0;
+}
+
+h5{
+	font-size: 0.83em;
+	font-weight: bold;
+	margin: 1.67em 0 1.67em 0;
+}
+
+h6{
+	font-size: 0.67em;
+	font-weight: bold;
+	margin: 2.33em 0 2.33em 0;
+}
+
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
+/*body {
 	line-height: 1;
-}
+}*/
 ol, ul {
 	list-style: none;
 }
@@ -51,46 +114,3 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-/* End CSS Reset */
-
-/*
-add your styles AFTER loading the CSS reset styles
-
-if the reset has removed all sizing, margins, padding, etc,
-you will need to rebuild them now.
-*/
-/*
-html {
-    box-sizing: border-box;
-}
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-body{
-	font-size:1.2em;	
-}
-h1{	font-size:2em;		}
-h2{	font-size:1.8em;	}
-h3{	font-size:1.6em;	}
-h4{	font-size:1.4em;	}
-h5{	font-size:1.2em;	}
-h6{	font-size:1.1em;	}
-
-h1, h2, h3, h4, h5, h6{
-	font-weight:bold;	
-	margin:10px 5px;
-}
-p{ 	
-	margin:5px 10px;
-}
-*/
-
-
-
-
-
-
-
-
-
