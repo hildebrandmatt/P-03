@@ -1,18 +1,23 @@
 @charset "utf-8";
 
+
 //import variables
 @import "variables.scss";
 
 //import mixins
-@import "mixins";
+//@import "/styles/mixins.scss";
 
 //import resets
 @import "normalize.scss";
 
 //import styles
-@import "header.scss";
-@import "forms.scss";
-@import "footer.scss";
+//@import "/styles/header.scss";
+//@import "/styles/forms.scss";
+//@import "/styles/footer.scss";
 
 //import widescreen media query styles
-@import "widescreen_layout.scss";
+//@import "/styles/widescreen_layout.scss";
+
+footer{
+    background-color: $secondary_color;
+}
