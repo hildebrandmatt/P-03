@@ -41,6 +41,10 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+# Compiled CSS files #
+######################
+.css
+
 
 # Saas cache #
 ##############
