@@ -1,20 +1,4 @@
 body{
-    background-color: $primary_color;
+    background-color: white;
 }
 
-header{
-    display: flex;
-    height: 50vh;
-    overflow: hidden;
-    position: relative;
-}
-
-header img{
-    position: absolute;
-    z-index: 0;
-}
-
-h1{
-    color: black;
-    font-size: 24px;
-}
