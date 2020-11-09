@@ -5,7 +5,7 @@
 @import "variables.scss";
 
 //import mixins
-//@import "/styles/mixins.scss";
+//@import "mixins.scss";
 
 //import resets
 @import "normalize.scss";
@@ -13,12 +13,8 @@
 //import styles
 @import "header.scss";
 //@import "hamburger.scss";
-//@import "/styles/forms.scss";
-//@import "/styles/footer.scss";
+//@import "forms.scss";
+@import "footer.scss";
 
 //import widescreen media query styles
 //@import "/styles/widescreen_layout.scss";
-
-footer{
-    background-color: $secondary_color;
-}
