@@ -45,21 +45,60 @@ nav{
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+
+  border: 2px solid white;
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
 }
 
+#nav-ul-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding-top: 140px;
+    padding-inline-start: 0px;
+    box-sizing: border-box;
+    
+	margin-block-end: 0px;
+	margin-block-start: 0px;
+
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    transition: opacity 1s;
+    pointer-events: none;
+}
  
-#menuToggle a
+#nav-ul-home a
 {
   text-decoration: none;
-  color: #232323;
+  color:white;
+  font-family: $primary_font;
+  font-size: 18px;
+  line-height: 64px;
   
   transition: color 0.3s ease;
 }
 
-#menuToggle a:hover
+#nav-ul-home a:hover
 {
-  color: tomato;
+  opacity: 30%;
 }
+
+#li-circle {
+    border: 2px solid white;
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
 #menuToggle input
  {
    display: block;
@@ -81,10 +120,12 @@ nav{
  #menuToggle span
  {
    display: block;
-   width: 33px;
-   height: 4px;
+   width: 28px;
+   height: 3px;
    margin: 4px;
    position: relative;
+   left: 3px;
+   top: 8px;
    
    background: #cdcdcd;
    border-radius: 3px;
@@ -102,24 +143,41 @@ nav{
   */
  #menuToggle input:checked ~ span
  {
-   transform: translate(1px, 8px) rotate(45deg);
+   transform: translate(0px, 283px) rotate(45deg);
  }
  
  /*
   * But let's hide the middle one.
   */
- #menuToggle input:checked ~ span:nth-last-child(2)
+ #menuToggle input:checked ~ span:nth-last-child(3)
  {
    opacity: 0;
-   transform: rotate(0deg) scale(0.2, 0.2);
+   transform: translate(0px, 276px) rotate(0deg) scale(0.2, 0.2);
  }
  
  /*
   * Ohyeah and the last one should go the other direction
   */
- #menuToggle input:checked ~ span:nth-last-child(1)
+ #menuToggle input:checked ~ span:nth-last-child(2)
  {
-   transform: translate(1px, -8px) rotate(-45deg);
+   transform: translate(0px, 269px) rotate(-45deg);
+ }
+ 
+ #menuToggle input:checked ~ #nav-ul-home
+ {
+   opacity: 1;
+   transition: opacity 1s;
+   pointer-events: all;
+ }
+ 
+ #menuToggle input:checked
+ {
+   top:276px;
+ }
+ 
+ #menuToggle input:checked ~ span
+ {     
+   transition: transform 1s;
  }
 
 
