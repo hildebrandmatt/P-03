@@ -35,7 +35,7 @@ header h1 {
 header h2 {
   color: white;
   font-size: 18px;
-  font-family: "Palanquin", sans-serif;
+  font-family: 'Palanquin', sans-serif;
   font-weight: 100;
   line-height: 18px;
   margin: 10px;
@@ -73,6 +73,7 @@ nav {
   box-sizing: border-box;
   margin-block-end: 0px;
   margin-block-start: 0px;
+  list-style: none;
   background-color: black;
   position: fixed;
   width: 100%;
@@ -87,7 +88,7 @@ nav {
 #nav-ul-home a {
   text-decoration: none;
   color: white;
-  font-family: "Palanquin", sans-serif;
+  font-family: 'Palanquin', sans-serif;
   font-size: 18px;
   line-height: 64px;
   transition: color 0.3s ease;
@@ -171,8 +172,91 @@ nav {
   transition: transform 1s;
 }
 
-/*@media ??? {
-    header{
+footer {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Palanquin', sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  margin: 12px;
+}
+
+.social-media-icon {
+  width: 28px;
+  height: 28px;
+  margin: 10px;
+}
+
+#footer-home {
+  padding: 80px;
+  align-items: flex-end;
+}
+
+@media (min-width: 1120px) {
+  #bg-image-home {
+    background-image: url("../images/resized/landing_bg_large.jpg");
+  }
+  #header-title-home {
+    width: 800px;
+    margin-left: auto;
+  }
+  #menuToggle {
+    border: none;
+  }
+  #menuToggle span {
+    display: none;
+  }
+  #menuToggle input {
+    display: none;
+  }
+  header h1 {
+    font-size: 100px;
+    line-height: 100px;
+  }
+  header h2 {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  nav {
+    display: block;
+    width: 700px;
+    margin-left: auto;
+    margin-right: 50px;
+  }
+  #nav-ul-home {
+    opacity: 1;
+    background-color: transparent;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-around;
+    width: 700px;
+    top: -120px;
+    font-weight: 100;
+    pointer-events: all;
+  }
+  #nav-ul-home a {
+    font-size: 30px;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+  }
+  #nav-ul-home a:hover {
+    border-bottom: 2px solid red;
+    opacity: 100%;
+  }
+  #li-circle {
+    border: none;
+    display: none;
+  }
+  /*header{
         display: flex;
         width: 100%;
         height: 480px;
@@ -215,33 +299,5 @@ nav {
         width: 70vw;
         justify-content: space-between;
         margin: auto;
-    }
-}*/
-footer {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-footer a {
-  text-decoration: none;
-  color: white;
-  font-family: "Palanquin", sans-serif;
-  font-size: 18px;
-  line-height: 18px;
-  margin: 12px;
-}
-
-.social-media-icon {
-  width: 28px;
-  height: 28px;
-  margin: 10px;
-}
-
-#footer-home {
-  padding: 80px;
-  align-items: flex-end;
+    }*/
 }
