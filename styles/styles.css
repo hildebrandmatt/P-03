@@ -24,12 +24,12 @@ body {
 header h1 {
   color: white;
   font-size: 36px;
-  font-family: "Palanquin", sans-serif;
+  font-family: 'Palanquin', sans-serif;
   font-weight: 300;
   line-height: 36px;
   margin-top: 100px;
   margin-bottom: 0px;
-  text-shadow: 0px 0px 10px white;
+  text-shadow: 0px 0px 5px white;
 }
 
 header h2 {
@@ -100,6 +100,7 @@ nav {
 
 #li-circle {
   border: 2px solid white;
+  box-shadow: 0px 0px 4px white;
   height: 42px;
   width: 42px;
   border-radius: 50%;
@@ -129,7 +130,7 @@ nav {
   position: relative;
   left: 3px;
   top: 8px;
-  background: #cdcdcd;
+  background: white;
   border-radius: 3px;
   z-index: 1;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
@@ -204,6 +205,7 @@ footer a {
 @media (min-width: 1120px) {
   #bg-image-home {
     background-image: url("../images/resized/landing_bg_large.jpg");
+    background-attachment: fixed;
   }
   #header-title-home {
     width: 800px;
@@ -247,6 +249,7 @@ footer a {
     font-size: 30px;
     border-bottom: 2px solid white;
     padding-bottom: 10px;
+    transition: 0.3s ease;
   }
   #nav-ul-home a:hover {
     border-bottom: 2px solid red;

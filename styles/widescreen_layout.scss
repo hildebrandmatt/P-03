@@ -1,6 +1,7 @@
 @media (min-width: 1120px) {
     #bg-image-home {
         background-image: url("../images/resized/landing_bg_large.jpg");
+        background-attachment: fixed;
     }
 
     #header-title-home{
@@ -53,6 +54,8 @@
         font-size: 30px;
         border-bottom: 2px solid white;
         padding-bottom: 10px;
+
+        transition: 0.3s ease;
     }
 
     #nav-ul-home a:hover{
