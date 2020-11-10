@@ -11,7 +11,7 @@ header h1{
     line-height: 36px;
     margin-top: 100px;
     margin-bottom: 0px;
-    text-shadow: 0px 0px 10px white;
+    text-shadow: 0px 0px 5px white;
 }
 
 header h2{
@@ -47,6 +47,7 @@ nav{
   height: 42px;
   width: 42px;
   border-radius: 50%;
+  box-shadow: 0px 0px 5px white;
 }
 
 #nav-ul-home {
@@ -91,6 +92,7 @@ nav{
 
 #li-circle {
     border: 2px solid white;
+    box-shadow: 0px 0px 4px white;
     height: 42px;
     width: 42px;
     border-radius: 50%;
@@ -125,7 +127,7 @@ nav{
    left: 3px;
    top: 8px;
    
-   background: #cdcdcd;
+   background: white;
    border-radius: 3px;
    
    z-index: 1;
