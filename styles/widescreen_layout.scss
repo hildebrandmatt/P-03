@@ -4,6 +4,8 @@
     }
 
     #header-title-home{
+        width: 800px;
+        margin-left: auto;
     }
 
     #menuToggle{
@@ -11,6 +13,10 @@
     }
 
     #menuToggle span{
+        display: none;
+    }
+
+    #menuToggle input{
         display: none;
     }
 
@@ -22,6 +28,41 @@
     header h2{
         font-size: 36px;
         line-height: 36px;
+    }
+
+    nav{
+        display: block;
+        width: 700px;
+        margin-left: auto;
+        margin-right: 50px;
+    }
+
+    #nav-ul-home{
+        opacity: 1;
+        background-color: transparent;
+        flex-direction: row;
+        position: relative;
+        justify-content: space-around;
+        width: 700px;
+        top: -120px;
+        font-weight: 100;
+        pointer-events: all;
+    }
+
+    #nav-ul-home a{
+        font-size: 30px;
+        border-bottom: 2px solid white;
+        padding-bottom: 10px;
+    }
+
+    #nav-ul-home a:hover{
+        border-bottom: 2px solid red;
+        opacity: 100%;
+    }
+
+    #li-circle{
+        border: none;
+        display: none;
     }
 
     
