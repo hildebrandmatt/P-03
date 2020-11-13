@@ -1,3 +1,4 @@
+@charset "utf-8";
 /*
 --------------------------------
 html selectors
@@ -10,8 +11,25 @@ body{
 
 legend{
     font-family: $primary_font;
+    font-size: 2em;
+    padding: 15px 15px 15px 15px;
+    text-align: center;
 }
 
+fieldset{
+    margin: 20px;
+}
+
+fieldset p{
+    font-family: $secondary_font;
+    margin: 0px 15px 10px 15px;
+}
+
+/*
+--------------------------------
+class selectors
+--------------------------------
+*/
 
 /*
 --------------------------------
