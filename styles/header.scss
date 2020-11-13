@@ -2,12 +2,13 @@ header img{
   position: absolute;
   top: 0px;
   z-index: -1;
-  height: 200px;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
 header{
-  width: 100%;
+  width: 100vw;
   height: 200px;
 }
 
