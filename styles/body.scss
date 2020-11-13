@@ -76,11 +76,17 @@ class selectors
 }
 
 .menu-item{
-    display: flex;
-    justify-content: space-around;
     padding: 0px 20px 0px 20px;
 }
 
+.menu-flex-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-item-description p{
+    margin-top: 0;
+}
 
 .adoption a{
     font-family: $secondary_font;

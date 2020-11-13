@@ -13,12 +13,13 @@ header img {
   position: absolute;
   top: 0px;
   z-index: -1;
-  height: 200px;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
 header {
-  width: 100%;
+  width: 100vw;
   height: 200px;
 }
 
@@ -277,9 +278,16 @@ class selectors
 }
 
 .menu-item {
-  display: flex;
-  justify-content: space-around;
   padding: 0px 20px 0px 20px;
+}
+
+.menu-flex-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-item-description p {
+  margin-top: 0;
 }
 
 .adoption a {
