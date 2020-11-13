@@ -30,6 +30,12 @@ a{
     text-decoration: none;
 }
 
+h2{
+    font-family: $primary_font;
+    font-weight: normal;
+    text-align: center;
+}
+
 h3{
     font-family: $primary_font;
     font-weight: normal;
@@ -76,6 +82,7 @@ class selectors
 .menu-item{
     display: flex;
     justify-content: space-around;
+    padding: 0px 20px 0px 20px;
 }
 
 /*
