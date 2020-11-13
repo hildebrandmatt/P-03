@@ -1,5 +1,14 @@
+/*
+--------------------------------
+html selectors
+--------------------------------
+*/
 body {
   background-color: white;
+}
+
+legend {
+  padding-left: 20px;
 }
 
 #bg-image-home {

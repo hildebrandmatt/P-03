@@ -9,20 +9,6 @@ $header_title_size: 1em;
 $header_subtitle_size: 1em;
 
 */
-body {
-  background-color: white;
-}
-
-#bg-image-home {
-  background-color: black;
-  background-image: url("../images/resized/landing_bg_med.jpg");
-  background-size: cover;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  height: 100vh;
-  background-position: center;
-}
-
 #header-title-home {
   width: 100%;
   text-align: center;
@@ -178,6 +164,34 @@ nav {
 
 #menuToggle input:checked ~ span {
   transition: transform 1s;
+}
+
+/*
+--------------------------------
+html selectors
+--------------------------------
+*/
+body {
+  background-color: white;
+}
+
+legend {
+  font-family: "Palanquin", sans-serif;
+}
+
+/*
+--------------------------------
+id selectors
+--------------------------------
+*/
+#bg-image-home {
+  background-color: black;
+  background-image: url("../images/resized/landing_bg_med.jpg");
+  background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
 }
 
 footer {

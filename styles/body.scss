@@ -1,7 +1,23 @@
+/*
+--------------------------------
+html selectors
+--------------------------------
+*/
+
 body{
     background-color: white;
 }
 
+legend{
+    font-family: $primary_font;
+}
+
+
+/*
+--------------------------------
+id selectors
+--------------------------------
+*/
 #bg-image-home {
     background-color: black;
     background-image: url("../images/resized/landing_bg_med.jpg");
