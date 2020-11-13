@@ -1,19 +1,26 @@
 footer {
     display: flex;
     flex-direction: column;
-    position: fixed;
     bottom: 0px;
     width: 100%;
     box-sizing: border-box;
+    background-color: $primary_color;
+    align-items: center;
+    padding: 20px;
 }
 
-footer a{    
+footer a, p{    
   text-decoration: none;
   color:white;
-  font-family: 'Palanquin', sans-serif;
-  font-size: 18px;
+  font-family: $primary_font;
+  font-size: $footer_font_size_mobile;
   line-height: 18px;
-  margin: 12px;
+  margin: 8px;
+  text-align: center;
+}
+
+footer p{
+    margin: 0px;
 }
 
 .social-media-icon{
@@ -22,7 +29,13 @@ footer a{
     margin: 10px;
 }
 
+.footer-logo{
+    width: 64px;
+}
+
 #footer-home{
     padding: 80px;
     align-items: flex-end;
+    background-color: transparent;
+    position: fixed;
 }
