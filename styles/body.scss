@@ -6,7 +6,8 @@ html selectors
 */
 
 body{
-    background-color: white;
+    background-color: $secondary_color;
+    margin: auto;
 }
 
 legend{
@@ -25,9 +26,10 @@ fieldset p{
     margin: 0px 12px 15px 12px;
 }
 
-a{
-    font-family: $secondary_font;
-    text-decoration: none;
+h2{
+    font-family: $primary_font;
+    font-weight: normal;
+    text-align: center;
 }
 
 h3{
@@ -76,8 +78,19 @@ class selectors
 .menu-item{
     display: flex;
     justify-content: space-around;
+    padding: 0px 20px 0px 20px;
 }
 
+
+.adoption a{
+    font-family: $secondary_font;
+    text-decoration: none;
+    color: $primary_color;
+    border: solid 1px $secondary_color;
+    border-radius: 15px;
+    background-color: $secondary_color;
+    padding: 10px;
+}
 /*
 --------------------------------
 id selectors

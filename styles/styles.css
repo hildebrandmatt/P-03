@@ -208,7 +208,8 @@ html selectors
 --------------------------------
 */
 body {
-  background-color: white;
+  background-color: #FFFFFF;
+  margin: auto;
 }
 
 legend {
@@ -227,9 +228,10 @@ fieldset p {
   margin: 0px 12px 15px 12px;
 }
 
-a {
-  font-family: "Lato", sans-serif;
-  text-decoration: none;
+h2 {
+  font-family: "Palanquin", sans-serif;
+  font-weight: normal;
+  text-align: center;
 }
 
 h3 {
@@ -277,6 +279,17 @@ class selectors
 .menu-item {
   display: flex;
   justify-content: space-around;
+  padding: 0px 20px 0px 20px;
+}
+
+.adoption a {
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  color: #000000;
+  border: solid 1px #FFFFFF;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  padding: 10px;
 }
 
 /*
