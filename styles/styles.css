@@ -177,18 +177,32 @@ body {
 
 legend {
   font-family: "Palanquin", sans-serif;
-  font-size: 2em;
-  padding: 15px 15px 15px 15px;
+  font-size: 1.5em;
+  padding: 15px 15px 10px 15px;
   text-align: center;
 }
 
 fieldset {
-  margin: 20px;
+  margin: 15px;
 }
 
 fieldset p {
   font-family: "Lato", sans-serif;
-  margin: 0px 15px 10px 15px;
+  margin: 0px 12px 15px 12px;
+}
+
+a {
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+}
+
+h3 {
+  font-family: "Palanquin", sans-serif;
+  font-weight: normal;
+}
+
+form {
+  font-family: "Lato", sans-serif;
 }
 
 /*
@@ -196,6 +210,39 @@ fieldset p {
 class selectors
 --------------------------------
 */
+.menu-btn {
+  font-family: "Lato", sans-serif;
+  border: solid 1px black;
+  /*width: 50px;*/
+  padding: 15px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
+  transition: 0.4s;
+}
+
+.menu-btn:hover {
+  font-family: "Lato", sans-serif;
+  background-color: #000000;
+  color: #FFFFFF;
+  border: solid 1px black;
+  padding: 15px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.menu-category {
+  border: solid 1.5px black;
+  margin: 35px 15px 45px 15px;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-around;
+}
+
 /*
 --------------------------------
 id selectors

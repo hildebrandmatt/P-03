@@ -11,25 +11,72 @@ body{
 
 legend{
     font-family: $primary_font;
-    font-size: 2em;
-    padding: 15px 15px 15px 15px;
+    font-size: 1.5em;
+    padding: 15px 15px 10px 15px;
     text-align: center;
 }
 
 fieldset{
-    margin: 20px;
+    margin: 15px;
 }
 
 fieldset p{
     font-family: $secondary_font;
-    margin: 0px 15px 10px 15px;
+    margin: 0px 12px 15px 12px;
 }
+
+a{
+    font-family: $secondary_font;
+    text-decoration: none;
+}
+
+h3{
+    font-family: $primary_font;
+    font-weight: normal;
+}
+
+form{
+    font-family: $secondary_font;
+}
+
 
 /*
 --------------------------------
 class selectors
 --------------------------------
 */
+.menu-btn{
+    font-family: $secondary_font;
+    border: solid 1px black;
+    /*width: 50px;*/
+    padding: 15px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.4s;
+}
+
+.menu-btn:hover{
+    font-family: $secondary_font;
+    background-color: $primary_color;
+    color: $secondary_color;
+    border: solid 1px black;
+    padding: 15px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.menu-category{
+    border: solid 1.5px black;
+    margin: 35px 15px 45px 15px;
+}
+
+.menu-item{
+    display: flex;
+    justify-content: space-around;
+}
 
 /*
 --------------------------------
