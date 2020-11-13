@@ -9,6 +9,19 @@ $header_title_size: 1em;
 $header_subtitle_size: 1em;
 
 */
+header img {
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+  height: 200px;
+  object-fit: cover;
+}
+
+header {
+  width: 100%;
+  height: 200px;
+}
+
 #header-title-home {
   width: 100%;
   text-align: center;
@@ -42,6 +55,21 @@ nav {
   margin-top: 40px;
 }
 
+.header-bar {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+
+.header-bar h1 {
+  margin-top: 40px;
+}
+
+.header-bar nav {
+  margin-top: 20px;
+}
+
 #menuToggle {
   display: block;
   position: relative;
@@ -69,13 +97,17 @@ nav {
   list-style: none;
   background-color: #000000;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   top: 0px;
   left: 0px;
   opacity: 0;
   transition: opacity 1s;
   pointer-events: none;
+}
+
+.header-bar #nav-ul-home {
+  padding-top: 70px;
 }
 
 #nav-ul-home a {
@@ -105,8 +137,8 @@ nav {
   width: 40px;
   height: 32px;
   position: absolute;
-  top: -8px;
-  left: -8px;
+  top: 0px;
+  left: -4px;
   cursor: pointer;
   opacity: 0;
   /* hide this */
@@ -164,6 +196,10 @@ nav {
 
 #menuToggle input:checked ~ span {
   transition: transform 1s;
+}
+
+#bg-image-home {
+  margin: 0px;
 }
 
 /*
