@@ -9,9 +9,9 @@ footer {
     padding: 20px;
 }
 
-footer a, p{    
+footer a, footer p{    
   text-decoration: none;
-  color:white;
+  color: $secondary_color;
   font-family: $primary_font;
   font-size: $footer_font_size_mobile;
   line-height: 18px;

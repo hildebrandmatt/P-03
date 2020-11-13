@@ -191,9 +191,9 @@ footer {
   padding: 20px;
 }
 
-footer a, p {
+footer a, footer p {
   text-decoration: none;
-  color: white;
+  color: #FFFFFF;
   font-family: "Palanquin", sans-serif;
   font-size: 18px;
   line-height: 18px;
