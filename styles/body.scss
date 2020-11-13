@@ -84,8 +84,21 @@ class selectors
     justify-content: space-between;
 }
 
-.menu-item-description p{
+.menu-item-description{
     margin-top: 0;
+    font-family: $secondary_font;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.menu-item-name{
+    margin-bottom: 2px;
+    font-family: $secondary_font;
+}
+
+.menu-item-price{
+    margin-bottom: 2px;
+    font-family: $secondary_font;
 }
 
 .adoption a{
