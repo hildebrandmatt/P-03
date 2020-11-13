@@ -29,20 +29,20 @@ body {
 }
 
 header h1 {
-  color: white;
+  color: #FFFFFF;
   font-size: 36px;
-  font-family: 'Palanquin', sans-serif;
+  font-family: "Palanquin", sans-serif;
   font-weight: 300;
   line-height: 36px;
   margin-top: 100px;
   margin-bottom: 0px;
-  text-shadow: 0px 0px 5px white;
+  text-shadow: 0px 0px 5px #FFFFFF;
 }
 
 header h2 {
-  color: white;
+  color: #FFFFFF;
   font-size: 18px;
-  font-family: 'Palanquin', sans-serif;
+  font-family: "Palanquin", sans-serif;
   font-weight: 100;
   line-height: 18px;
   margin: 10px;
@@ -64,7 +64,7 @@ nav {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border: 2px solid white;
+  border: 2px solid #FFFFFF;
   height: 42px;
   width: 42px;
   border-radius: 50%;
@@ -81,7 +81,7 @@ nav {
   margin-block-end: 0px;
   margin-block-start: 0px;
   list-style: none;
-  background-color: black;
+  background-color: #000000;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -94,8 +94,8 @@ nav {
 
 #nav-ul-home a {
   text-decoration: none;
-  color: white;
-  font-family: 'Palanquin', sans-serif;
+  color: #FFFFFF;
+  font-family: "Palanquin", sans-serif;
   font-size: 18px;
   line-height: 64px;
   transition: color 0.3s ease;
@@ -106,8 +106,8 @@ nav {
 }
 
 #li-circle {
-  border: 2px solid white;
-  box-shadow: 0px 0px 4px white;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0px 0px 4px #FFFFFF;
   height: 42px;
   width: 42px;
   border-radius: 50%;
@@ -137,7 +137,7 @@ nav {
   position: relative;
   left: 3px;
   top: 8px;
-  background: white;
+  background: #FFFFFF;
   border-radius: 3px;
   z-index: 1;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;

@@ -4,20 +4,20 @@
 }
 
 header h1{
-    color: white;
-    font-size: 36px;
-    font-family: 'Palanquin', sans-serif;
+    color: $primary_font_color;
+    font-size: $header_font_size_mobile;
+    font-family: $primary_font;
     font-weight: 300;
     line-height: 36px;
     margin-top: 100px;
     margin-bottom: 0px;
-    text-shadow: 0px 0px 5px white;
+    text-shadow: 0px 0px 5px $primary_font_color;
 }
 
 header h2{
-    color: white;
-    font-size: 18px;
-    font-family: 'Palanquin', sans-serif;
+    color: $primary_font_color;
+    font-size: $subheader_font_size_mobile;
+    font-family: $primary_font;
     font-weight: 100;
     line-height: 18px;
     margin: 10px;
@@ -43,7 +43,7 @@ nav{
   -moz-appearance: none;
   appearance: none;
 
-  border: 2px solid white;
+  border: 2px solid $secondary_color;
   height: 42px;
   width: 42px;
   border-radius: 50%;
@@ -62,7 +62,7 @@ nav{
     margin-block-start: 0px;
     list-style: none;
 
-    background-color: black;
+    background-color: $primary_color;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -76,9 +76,9 @@ nav{
 #nav-ul-home a
 {
   text-decoration: none;
-  color:white;
-  font-family: 'Palanquin', sans-serif;
-  font-size: 18px;
+  color: $secondary_color;
+  font-family: $primary_font;
+  font-size: $nav_font_size_mobile;
   line-height: 64px;
   
   transition: color 0.3s ease;
@@ -90,8 +90,8 @@ nav{
 }
 
 #li-circle {
-    border: 2px solid white;
-    box-shadow: 0px 0px 4px white;
+    border: 2px solid $secondary_color;
+    box-shadow: 0px 0px 4px $secondary_color;
     height: 42px;
     width: 42px;
     border-radius: 50%;
@@ -126,7 +126,7 @@ nav{
    left: 3px;
    top: 8px;
    
-   background: white;
+   background: $secondary_color;
    border-radius: 3px;
    
    z-index: 1;
