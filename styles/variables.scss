@@ -3,12 +3,40 @@ Just some temporary colors for now
 Based off colors from https://assets.punchdrink.com/wp-content/uploads/2019/04/Article-Lazy-Bird-Chicago-Hoxton-Best-New-Bars-Spring-Summer-2019.jpg
 */
 
-$primary_color: #400D00;
-$secondary_color: #566B6E;
-$wrapper_color: #D49537;
-$font_color: #E3E8FC;
+//Basic Colours
+
+$primary_color: #000000;
+$secondary_color: #FFFFFF;
+
+//Fonts
 
 $primary_font: 'Palanquin', sans-serif;
+$secondary_font: 'Lato', sans-serif;
+
+//Font Sizes
+
+//$header_font_size_mobile: ;
+//$subheader_font_size_mobile: ;
+//$nav_font_size_mobile: ;
+//$section_title_font_size_mobile: ;
+//$body_font_size_mobile: ;
+//$footer_font_size_mobile: ;
+
+//$header_font_size_desktop: ;
+//$subheader_font_size_desktop: ;
+//$nav_font_size_desktop: ;
+//$section_title_font_size_desktop: ;
+//$body_font_size_desktop: ;
+//$footer_font_size_desktop: ;
+
+//Font Colours
+
+$primary_font_color: #FFFFFF;
+$secondary_font_color: #000000;
+
+
+
+
 
 /* some we might be able to use
 numbers are arbitrary for now- maybe use these for mixins later?
