@@ -20,7 +20,7 @@ header img {
 
 header {
   width: 100vw;
-  height: 200px;
+  height: 250px;
 }
 
 #header-title-home {
@@ -30,18 +30,18 @@ header {
 
 header h1 {
   color: #FFFFFF;
-  font-size: 36px;
+  font-size: 2.5em;
   font-family: "Palanquin", sans-serif;
   font-weight: 300;
   line-height: 36px;
-  margin-top: 100px;
+  margin-top: 120px;
   margin-bottom: 0px;
   text-shadow: 0px 0px 5px #FFFFFF;
 }
 
 header h2 {
   color: #FFFFFF;
-  font-size: 18px;
+  font-size: 1.25em;
   font-family: "Palanquin", sans-serif;
   font-weight: 100;
   line-height: 18px;
@@ -64,7 +64,7 @@ nav {
 }
 
 .header-bar h1 {
-  margin-top: 40px;
+  margin-top: 80px;
 }
 
 .header-bar nav {
