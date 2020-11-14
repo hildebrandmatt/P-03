@@ -12,21 +12,30 @@ landing styles
     background-attachment: fixed;
 }
 
-#header-title-home{
+#header-home{
     width: 800px;
     margin-left: auto;
+    padding: 20px;
 }
 
-#menuToggle{
+#header-title-home{
+    width: 800px;
+}
+
+.menuToggle{
     border: none;
 }
 
-#menuToggle span{
+.menuToggle span{
     display: none;
 }
 
-#menuToggle input{
+.menuToggle input{
     display: none;
+}
+
+header{
+    height: 450px;
 }
 
 header h1{
@@ -46,7 +55,7 @@ nav{
     margin-right: 50px;
 }
 
-#nav-ul-home{
+.nav-bar{
     opacity: 1;
     background-color: transparent;
     flex-direction: row;
@@ -56,18 +65,19 @@ nav{
     top: -120px;
     font-weight: 100;
     pointer-events: all;
+    margin-top: 100px;
 }
 
-#nav-ul-home a{
+.nav-bar a{
     font-size: 30px;
-    border-bottom: 2px solid white;
+    border-bottom: none;
     padding-bottom: 10px;
 
     transition: 0.3s ease;
 }
 
-#nav-ul-home a:hover{
-    border-bottom: 2px solid red;
+.nav-bar a:hover{
+    border-bottom: 2px solid $tertiary_color;
     opacity: 100%;
 }
 
@@ -96,6 +106,16 @@ fieldset p{
 .wrapper{
     width: 680px;
     max-width: 100%;
+    margin: auto;
+}
+
+.current-page{
+    opacity: 1;
+  border-bottom: 2px solid $tertiary_color !important;
+}
+
+.nav-general{
+    padding-top: 80px;
     margin: auto;
 }
 

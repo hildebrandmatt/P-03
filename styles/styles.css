@@ -19,7 +19,7 @@ header img {
 }
 
 header {
-  width: 100vw;
+  width: 100%;
   height: 250px;
 }
 
@@ -72,7 +72,11 @@ nav {
   margin-top: 20px;
 }
 
-#menuToggle {
+.current-page {
+  opacity: 0.3;
+}
+
+.menuToggle {
   display: block;
   position: relative;
   align-items: center;
@@ -86,12 +90,12 @@ nav {
   border-radius: 50%;
 }
 
-#nav-ul-home {
+.nav-bar {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-items: center;
-  padding-top: 140px;
+  padding-top: 131px;
   padding-inline-start: 0px;
   box-sizing: border-box;
   margin-block-end: 0px;
@@ -108,11 +112,11 @@ nav {
   pointer-events: none;
 }
 
-.header-bar #nav-ul-home {
-  padding-top: 70px;
+.header-bar .nav-bar {
+  padding-top: 71px;
 }
 
-#nav-ul-home a {
+.nav-bar a {
   text-decoration: none;
   color: #FFFFFF;
   font-family: "Palanquin", sans-serif;
@@ -121,7 +125,7 @@ nav {
   transition: color 0.3s ease;
 }
 
-#nav-ul-home a:hover {
+.nav-bar a:hover {
   opacity: 30%;
 }
 
@@ -134,7 +138,7 @@ nav {
   margin: 20px;
 }
 
-#menuToggle input {
+.menuToggle input {
   display: block;
   width: 40px;
   height: 32px;
@@ -149,7 +153,7 @@ nav {
   -webkit-touch-callout: none;
 }
 
-#menuToggle span {
+.menuToggle span {
   display: block;
   width: 28px;
   height: 3px;
@@ -167,14 +171,14 @@ nav {
   * Transform all the slices of hamburger
   * into a crossmark.
   */
-#menuToggle input:checked ~ span {
+.menuToggle input:checked ~ span {
   transform: translate(0px, 254px) rotate(45deg);
 }
 
 /*
   * But let's hide the middle one.
   */
-#menuToggle input:checked ~ span:nth-last-child(3) {
+.menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   transform: translate(0px, 247px) rotate(0deg) scale(0.2, 0.2);
 }
@@ -182,21 +186,21 @@ nav {
 /*
   * Ohyeah and the last one should go the other direction
   */
-#menuToggle input:checked ~ span:nth-last-child(2) {
+.menuToggle input:checked ~ span:nth-last-child(2) {
   transform: translate(0px, 240px) rotate(-45deg);
 }
 
-#menuToggle input:checked ~ #nav-ul-home {
+.menuToggle input:checked ~ .nav-bar {
   opacity: 1;
   transition: opacity 1s;
   pointer-events: all;
 }
 
-#menuToggle input:checked {
-  top: 276px;
+.menuToggle input:checked {
+  top: 247px;
 }
 
-#menuToggle input:checked ~ span {
+.menuToggle input:checked ~ span {
   transition: transform 1s;
 }
 
@@ -415,18 +419,25 @@ landing styles
     background-image: url("../images/resized/landing_bg_large.jpg");
     background-attachment: fixed;
   }
-  #header-title-home {
+  #header-home {
     width: 800px;
     margin-left: auto;
+    padding: 20px;
   }
-  #menuToggle {
+  #header-title-home {
+    width: 800px;
+  }
+  .menuToggle {
     border: none;
   }
-  #menuToggle span {
+  .menuToggle span {
     display: none;
   }
-  #menuToggle input {
+  .menuToggle input {
     display: none;
+  }
+  header {
+    height: 450px;
   }
   header h1 {
     font-size: 100px;
@@ -442,7 +453,7 @@ landing styles
     margin-left: auto;
     margin-right: 50px;
   }
-  #nav-ul-home {
+  .nav-bar {
     opacity: 1;
     background-color: transparent;
     flex-direction: row;
@@ -452,14 +463,15 @@ landing styles
     top: -120px;
     font-weight: 100;
     pointer-events: all;
+    margin-top: 100px;
   }
-  #nav-ul-home a {
+  .nav-bar a {
     font-size: 30px;
-    border-bottom: 2px solid white;
+    border-bottom: none;
     padding-bottom: 10px;
     transition: 0.3s ease;
   }
-  #nav-ul-home a:hover {
+  .nav-bar a:hover {
     border-bottom: 2px solid red;
     opacity: 100%;
   }
@@ -484,6 +496,14 @@ other page general styles
   .wrapper {
     width: 680px;
     max-width: 100%;
+    margin: auto;
+  }
+  .current-page {
+    opacity: 1;
+    border-bottom: 2px solid red !important;
+  }
+  .nav-general {
+    padding-top: 80px;
     margin: auto;
   }
   /*header{
