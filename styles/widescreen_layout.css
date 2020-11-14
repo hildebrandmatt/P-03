@@ -1,4 +1,9 @@
-@media (min-width: 1120px) {
+@media (min-width: 980px) {
+  /*
+--------------------------------
+landing styles    
+--------------------------------
+*/
   #bg-image-home {
     background-image: url("../images/resized/landing_bg_large.jpg");
     background-attachment: fixed;
@@ -55,48 +60,60 @@
     border: none;
     display: none;
   }
+  /*
+--------------------------------
+other page general styles    
+--------------------------------
+*/
+  /*-----------html selectors-----------*/
+  /*----------class selectors-----------*/
+  .wrapper {
+    width: 680px;
+    max-width: 100%;
+    margin: auto;
+  }
   /*header{
-        display: flex;
-        width: 100%;
-        height: 480px;
-        overflow: hidden;
-        position: relative;
-        flex-direction: column;
-        text-align: center;
-        position: relative;
-        background-color: black;
-        z-index: -2;
-    }
+    display: flex;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    background-color: black;
+    z-index: -2;
+}
 
-    header img{
-        position: absolute;
-        z-index: -1;
-        min-height: 100%;
-        width: auto;
-        background-position: center top;
-        left: 50%;
-        transform: translateX(-50%);
-        opacity: 0.7;
-    }
+header img{
+    position: absolute;
+    z-index: -1;
+    min-height: 100%;
+    width: auto;
+    background-position: center top;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.7;
+}
 
-    nav {
-        position: absolute;
-        bottom: 48px;
-        align-self: center;
-    }
+nav {
+    position: absolute;
+    bottom: 48px;
+    align-self: center;
+}
 
-    .nav-a{
-        font-family: $primary_font;
-        font-weight: 200;
-        color: white;
-        text-decoration: none;
-        font-size: 32px;
-    }
+.nav-a{
+    font-family: $primary_font;
+    font-weight: 200;
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+}
 
-    #nav-ul{
-        display: flex;
-        width: 70vw;
-        justify-content: space-between;
-        margin: auto;
-    }*/
+#nav-ul{
+    display: flex;
+    width: 70vw;
+    justify-content: space-between;
+    margin: auto;
+}*/
 }

@@ -13,12 +13,14 @@ body{
 legend{
     font-family: $primary_font;
     font-size: 1.5em;
-    padding: 15px 15px 10px 15px;
+    padding-left: 15px;
+    padding-right: 15px;
     text-align: center;
 }
 
 fieldset{
     margin: 15px;
+    border-width: 2.5px;
 }
 
 fieldset p{
@@ -37,8 +39,25 @@ h3{
     font-weight: normal;
 }
 
-form{
+p{
+    font-size: $body_font_size_mobile;
+}
+
+/*as of this moment this stuff doesn't work when i put it into the forms scss */
+form label{
     font-family: $secondary_font;
+    font-size: $body_font_size_mobile;
+}
+
+form h3{
+    margin-top: 0px;
+    font-size: 1.25em;
+    text-align: center;
+    line-height: 1;
+}
+
+.form-group{
+    margin: 5px;
 }
 
 
@@ -49,6 +68,7 @@ class selectors
 */
 .menu-btn{
     font-family: $secondary_font;
+    font-size: $body_font_size_mobile;
     border: solid 1px black;
     /*width: 50px;*/
     padding: 15px;
@@ -73,6 +93,11 @@ class selectors
 .menu-category{
     border: solid 1.5px black;
     margin: 35px 15px 45px 15px;
+}
+
+.menu-category h2{
+    margin-top: 15px;
+    margin-bottom: 0%;
 }
 
 .menu-item{
@@ -110,6 +135,15 @@ class selectors
     background-color: $secondary_color;
     padding: 10px;
 }
+
+img{
+    max-width: 100%;
+}
+
+.contact-us img{
+    max-width: 100%;
+}
+
 /*
 --------------------------------
 id selectors

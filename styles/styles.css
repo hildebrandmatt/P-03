@@ -61,10 +61,11 @@ nav {
   flex-direction: column;
   text-align: center;
   position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
 }
 
 .header-bar h1 {
-  margin-top: 80px;
+  margin-top: 70px;
 }
 
 .header-bar nav {
@@ -167,7 +168,7 @@ nav {
   * into a crossmark.
   */
 #menuToggle input:checked ~ span {
-  transform: translate(0px, 283px) rotate(45deg);
+  transform: translate(0px, 254px) rotate(45deg);
 }
 
 /*
@@ -175,14 +176,14 @@ nav {
   */
 #menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
-  transform: translate(0px, 276px) rotate(0deg) scale(0.2, 0.2);
+  transform: translate(0px, 247px) rotate(0deg) scale(0.2, 0.2);
 }
 
 /*
   * Ohyeah and the last one should go the other direction
   */
 #menuToggle input:checked ~ span:nth-last-child(2) {
-  transform: translate(0px, 269px) rotate(-45deg);
+  transform: translate(0px, 240px) rotate(-45deg);
 }
 
 #menuToggle input:checked ~ #nav-ul-home {
@@ -216,12 +217,14 @@ body {
 legend {
   font-family: "Palanquin", sans-serif;
   font-size: 1.5em;
-  padding: 15px 15px 10px 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   text-align: center;
 }
 
 fieldset {
   margin: 15px;
+  border-width: 2.5px;
 }
 
 fieldset p {
@@ -240,8 +243,25 @@ h3 {
   font-weight: normal;
 }
 
-form {
+p {
+  font-size: 13px;
+}
+
+/*as of this moment this stuff doesn't work when i put it into the forms scss */
+form label {
   font-family: "Lato", sans-serif;
+  font-size: 13px;
+}
+
+form h3 {
+  margin-top: 0px;
+  font-size: 1.25em;
+  text-align: center;
+  line-height: 1;
+}
+
+.form-group {
+  margin: 5px;
 }
 
 /*
@@ -251,6 +271,7 @@ class selectors
 */
 .menu-btn {
   font-family: "Lato", sans-serif;
+  font-size: 13px;
   border: solid 1px black;
   /*width: 50px;*/
   padding: 15px;
@@ -275,6 +296,11 @@ class selectors
 .menu-category {
   border: solid 1.5px black;
   margin: 35px 15px 45px 15px;
+}
+
+.menu-category h2 {
+  margin-top: 15px;
+  margin-bottom: 0%;
 }
 
 .menu-item {
@@ -313,6 +339,14 @@ class selectors
   padding: 10px;
 }
 
+img {
+  max-width: 100%;
+}
+
+.contact-us img {
+  max-width: 100%;
+}
+
 /*
 --------------------------------
 id selectors
@@ -337,13 +371,14 @@ footer {
   background-color: #000000;
   align-items: center;
   padding: 20px;
+  margin-top: 40px;
 }
 
 footer a, footer p {
   text-decoration: none;
   color: #FFFFFF;
   font-family: "Palanquin", sans-serif;
-  font-size: 18px;
+  font-size: 13px;
   line-height: 18px;
   margin: 8px;
   text-align: center;
@@ -370,7 +405,12 @@ footer p {
   position: fixed;
 }
 
-@media (min-width: 1120px) {
+@media (min-width: 980px) {
+  /*
+--------------------------------
+landing styles    
+--------------------------------
+*/
   #bg-image-home {
     background-image: url("../images/resized/landing_bg_large.jpg");
     background-attachment: fixed;
@@ -427,48 +467,67 @@ footer p {
     border: none;
     display: none;
   }
+  /*
+--------------------------------
+other page general styles    
+--------------------------------
+*/
+  /*-----------html selectors-----------*/
+  legend {
+    font-size: 2.25em;
+    padding: 0px 15px 0px 15px;
+  }
+  fieldset p {
+    font-size: 1em;
+  }
+  /*----------class selectors-----------*/
+  .wrapper {
+    width: 680px;
+    max-width: 100%;
+    margin: auto;
+  }
   /*header{
-        display: flex;
-        width: 100%;
-        height: 480px;
-        overflow: hidden;
-        position: relative;
-        flex-direction: column;
-        text-align: center;
-        position: relative;
-        background-color: black;
-        z-index: -2;
-    }
+    display: flex;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    background-color: black;
+    z-index: -2;
+}
 
-    header img{
-        position: absolute;
-        z-index: -1;
-        min-height: 100%;
-        width: auto;
-        background-position: center top;
-        left: 50%;
-        transform: translateX(-50%);
-        opacity: 0.7;
-    }
+header img{
+    position: absolute;
+    z-index: -1;
+    min-height: 100%;
+    width: auto;
+    background-position: center top;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.7;
+}
 
-    nav {
-        position: absolute;
-        bottom: 48px;
-        align-self: center;
-    }
+nav {
+    position: absolute;
+    bottom: 48px;
+    align-self: center;
+}
 
-    .nav-a{
-        font-family: $primary_font;
-        font-weight: 200;
-        color: white;
-        text-decoration: none;
-        font-size: 32px;
-    }
+.nav-a{
+    font-family: $primary_font;
+    font-weight: 200;
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+}
 
-    #nav-ul{
-        display: flex;
-        width: 70vw;
-        justify-content: space-between;
-        margin: auto;
-    }*/
+#nav-ul{
+    display: flex;
+    width: 70vw;
+    justify-content: space-between;
+    margin: auto;
+}*/
 }

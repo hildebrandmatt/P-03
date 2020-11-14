@@ -50,10 +50,12 @@ nav{
   flex-direction: column;
   text-align: center;
   position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.35),
+                              rgba(0, 0, 0, 0.35))
 }
 
 .header-bar h1{
-  margin-top: 80px;
+  margin-top: 70px;
 }
 
 .header-bar nav{
@@ -175,7 +177,7 @@ nav{
   */
  #menuToggle input:checked ~ span
  {
-   transform: translate(0px, 283px) rotate(45deg);
+   transform: translate(0px, 254px) rotate(45deg);
  }
  
  /*
@@ -184,7 +186,7 @@ nav{
  #menuToggle input:checked ~ span:nth-last-child(3)
  {
    opacity: 0;
-   transform: translate(0px, 276px) rotate(0deg) scale(0.2, 0.2);
+   transform: translate(0px, 247px) rotate(0deg) scale(0.2, 0.2);
  }
  
  /*
@@ -192,7 +194,7 @@ nav{
   */
  #menuToggle input:checked ~ span:nth-last-child(2)
  {
-   transform: translate(0px, 269px) rotate(-45deg);
+   transform: translate(0px, 240px) rotate(-45deg);
  }
  
  #menuToggle input:checked ~ #nav-ul-home
