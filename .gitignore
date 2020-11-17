@@ -41,10 +41,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-# Compiled CSS files #
-######################
-.css
-
 
 # Saas cache #
 ##############
@@ -72,6 +68,7 @@ nbproject
 .komodotools
 _notes
 dwsync.xml
+.vscode
 
 
 # Ignore Node Modules #
@@ -79,13 +76,20 @@ dwsync.xml
 
 node_modules/
 
-
 # Folders to Ignore #
 #####################
 
 .tmp/
 
+# Ignore compiled CSS in dev folder
+# from repository
 
+dev/styles/*.css
+dev/styles/*.map
+
+# Ignore compiled JS file
+dev/scripts/script.min.js
+dev/scripts/script.min.js.map
 
 # Misc files to ignore #
 ########################
