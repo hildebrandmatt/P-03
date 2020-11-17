@@ -1,3 +1,37 @@
 .story{
-    
+    position: relative;
+    margin: 35px 17px 0px 17px;
+}
+
+.story fieldset{
+    margin: 5px 5px 8px 5px;
+	line-height: 1;
+	padding: 15px;
+    color: white;
+    background: linear-gradient(0deg, rgba(0,0,0,0.8) 75%,rgba(0,0,0,.559165) 88%,transparent);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+    max-width: 100%;
+}
+
+.accomplishments{
+    position: relative;
+    margin: 25px 17px 0px 17px;
+}
+
+.accomplishments fieldset{
+    margin: 5px 5px 8px 5px;
+	line-height: 1;
+	padding: 15px;
+	color: white;
+    background: linear-gradient(0deg, rgba(0,0,0,0.8) 75%,rgba(0,0,0,.559165) 88%,transparent);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	max-width: 100%;
+}
+
+.accomplishments legend{
+    font-size: 1.38em;
 }
