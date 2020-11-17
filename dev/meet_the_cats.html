@@ -5,108 +5,132 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>The Tuxedo Cat | Meet the Cats</title>
-    <link   rel="stylesheet" 
-            href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <!-- Put fonts here! -->
-    <link   rel="preconnect" 
-            href="https://fonts.gstatic.com">
-    <link   href="https://fonts.googleapis.com/css2?family=Lato&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap"
-            rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <!--<div class="top">-->
-        <header class="header-bar">
-            <img    src="images/resized/cats_banner_large.jpg"
-                    alt="Cat staring at you from the shadows"
-                    srcset="images/resized/cats_banner_large.jpg 1920w,
+    <header class="header-bar">
+        <img src="images/resized/cats_banner_large.jpg" alt="Cat staring at you from the shadows" srcset="images/resized/cats_banner_large.jpg 1920w,
                             images/resized/cats_banner_medium.jpg 634w,
-                            images/resized/cats_banner_small.jpg 480w"
-                    sizes="(max-width: 1920px) calc(100vw) 1920px">
-            <h1>The Tuxedo Cat</h1>
-            <h2>Cat bar and lounge</h2>
-            <nav role="navigation" class="nav-general">
-                <div class="menuToggle">
-                    <input type="checkbox" />
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <ul class="nav-bar">
-                        <li><a class="nav-a" href="about.html">About</a></li>
-                        <li><a class="nav-a" href="menu.html">Menu</a></li>
-                        <li><a class="nav-a" href="reservation.html">Reservation</a></li>
-                        <li><a class="nav-a current-page" href="meet_the_cats.html">Meet the cats</a></li>
-                        <li><a class="nav-a" href="contact.html">Contact</a></li>
-                        <li id="li-circle"></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+                            images/resized/cats_banner_small.jpg 480w" sizes="(max-width: 1920px) calc(100vw) 1920px">
+        <h1>The Tuxedo Cat</h1>
+        <h2>Cat bar and lounge</h2>
+        <nav role="navigation" class="nav-general">
+            <div class="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul class="nav-bar">
+                    <li><a class="nav-a" href="about.html">About</a></li>
+                    <li><a class="nav-a" href="menu.html">Menu</a></li>
+                    <li><a class="nav-a" href="reservation.html">Reservation</a></li>
+                    <li><a class="nav-a current-page" href="meet_the_cats.html">Meet the cats</a></li>
+                    <li><a class="nav-a" href="contact.html">Contact</a></li>
+                    <li id="li-circle"></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <!--</div>-->
 
     <div class="wrapper">
         <section class="page-intro">
             <fieldset>
-            <legend>Meet our Cats</legend>
-                <p>Meet your new furry best friend at The Tuxedo Cat. While our Resident Cats are here to stay, many of our furry friends are looking for a loving and warm home to go to. Come meet our cats and see if you meet the cat that's perfect for you!</p>
+                <legend>Meet our Cats</legend>
+                <p>Meet your new furry best friend at The Tuxedo Cat. While our Resident Cats are here to stay, many of
+                    our furry friends are looking for a loving and warm home to go to. Come meet our cats and see if you
+                    meet the cat that's perfect for you!</p>
             </fieldset>
         </section>
 
         <section class="adoption">
             <fieldset>
-            <legend>Adoption</legend>
+                <legend>Adoption</legend>
+                <img src="images/resized/cats-about_accomplishments-adopt_large.jpg">
                 <p>Adopting from us means adopting a rescue who would love a warm and loving family.</p>
-                <p>Our cats come from our partner rescue non-profit, Tuxedo Kitty Rescue. Our partnership means you can adopt on site!</p>
-                <a href="#0">Meet the Rescues</a>
+                <p>Our cats come from our partner rescue non-profit, Tuxedo Kitty Rescue. Our partnership means you can
+                    adopt on site!</p>
+                <a href="#0" id="adoption-button">Meet the Rescues</a>
             </fieldset>
         </section>
 
         <section class="cats">
-            <h3>Resident Cats</h3>
-            <p>Meet our Resident Cats! While our adoption kitties come and go as they find their forever homes, we have a small group of resident cats who are always here to keep you company. We're sure you'll love them just as much as we do!</p>
-        </section>
-
-        <section class="cat-list">
-            <article class="individual-cat-info">
+            <fieldset id="snake-head snake">
+                <legend>Resident Cats</legend>
+                <p>Meet our Resident Cats! While our adoption kitties come and go as they find their forever homes, we
+                    have a small group of resident cats who are always here to keep you company. We're sure you'll love
+                    them just as much as we do!</p>
+            </fieldset>
+            <div class="vertical-connector"></div>
+            <fieldset class="individual-cat-info snake">
                 <img src="images/residentCats/sherbet.jpg">
-                <p class="individual-cat-description">Sherbet has been a resident since The Tuxedo Cat opened. He weclomes all our rescues and makes sure they're comfortable. He's our star!</p>
-            </article>
-            <article class="individual-cat-info">
+                <p class="individual-cat-description">Sherbet has been a resident since The Tuxedo Cat opened. He
+                    weclomes all our rescues and makes sure they're comfortable. He's our star!</p>
+            </fieldset>
+            <div class="vertical-connector"></div>
+            <fieldset class="individual-cat-info snake">
                 <img src="images/residentCats/kesha.jpg">
-                <p class="individual-cat-description">Kesha is our second resident cat. She is inquisitive and loves getting to know our customers. Give her some ear scratches if you see her!</p>
-            </article>
-            <article class="individual-cat-info">
+                <p class="individual-cat-description">Kesha is our second resident cat. She is inquisitive and loves
+                    getting to know our customers. Give her some ear scratches if you see her!</p>
+            </fieldset>
+            <div class="vertical-connector"></div>
+            <fieldset class="individual-cat-info snake">
                 <img src="images/residentCats/munk.jpg">
-                <p class="individual-cat-description">Little Munk is our baby. He’s still a little timid, but if he gets to know you he’s an absolute sweetheart. Be gentle with him and you’ll see!</p>
-            </article>
-            <article class="individual-cat-info">
+                <p class="individual-cat-description">Little Munk is our baby. He’s still a little timid, but if he gets
+                    to know you he’s an absolute sweetheart. Be gentle with him and you’ll see!</p>
+            </fieldset>
+            <div class="vertical-connector"></div>
+            <fieldset class="individual-cat-info snake">
                 <img src="images/residentCats/beauregard.jpg">
-                <p class="individual-cat-description">Say hi to Beauregard on your way in! A welcoming cat at heart, she loves greeting new guests, and is very social. Maybe she’ll have something interesting to tell you!</p>
-            </article>
-            <article class="individual-cat-info">
+                <p class="individual-cat-description">Say hi to Beauregard on your way in! A welcoming cat at heart, she
+                    loves greeting new guests, and is very social. Maybe she’ll have something interesting to tell you!
+                </p>
+            </fieldset>
+            <div class="vertical-connector"></div>
+            <fieldset class="individual-cat-info snake">
                 <img src="images/residentCats/theodosia.jpg">
-                <p class="individual-cat-description">Theodosia may look skittish, but we promise, her heart’s as big as her eyes! Give her a chance and she’ll win you over.</p>
-            </article>
-            <article class="individual-cat-info">
+                <p class="individual-cat-description">Theodosia may look skittish, but we promise, her heart’s as big as
+                    her eyes! Give her a chance and she’ll win you over.</p>
+            </fieldset>
+            <div class="vertical-connector"></div>
+            <fieldset class="individual-cat-info snake">
                 <img src="images/residentCats/sandy.jpg">
-                <p class="individual-cat-description">Sandy can usually be found gracing a windowsill, looking out at the night sky. She can apear aloof, but she’s very patient. Give her a pet!</p>
-            </article>
-            <article class="individual-cat-info">
+                <p class="individual-cat-description">Sandy can usually be found gracing a windowsill, looking out at
+                    the night sky. She can apear aloof, but she’s very patient. Give her a pet!</p>
+            </fieldset>
+            <div class="vertical-connector"></div>
+            <fieldset class="individual-cat-info snake">
                 <img src="images/residentCats/mrIrons.jpg">
-                <p class="individual-cat-description">Be prepared for Mr Irons to ambush you! Even if you’re caught unawares, if you take the time to play with him you’ll be rewarded with a delighfully playful friend.</p>
-            </article>
-            <article class="individual-cat-info">
+                <p class="individual-cat-description">Be prepared for Mr Irons to ambush you! Even if you’re caught
+                    unawares, if you take the time to play with him you’ll be rewarded with a delighfully playful
+                    friend.</p>
+            </fieldset>
+            <div class="vertical-connector"></div>
+            <fieldset class="individual-cat-info snake">
                 <img src="images/residentCats/theodore.jpg">
-                <p class="individual-cat-description">Theodore is our other baby! Playful and curious, you’ll find him sniffing around the lounge for anything interesting. Don’t let him get a sip though!</p>
-            </article>
-            <article class="individual-cat-info">
+                <p class="individual-cat-description">Theodore is our other baby! Playful and curious, you’ll find him
+                    sniffing around the lounge for anything interesting. Don’t let him get a sip though!</p>
+            </fieldset>
+            <div class="vertical-connector"></div>
+            <fieldset class="individual-cat-info snake">
                 <img src="images/residentCats/louise.jpg">
-                <p class="individual-cat-description">Louis comes all the way from the French Riviera. I don’t know where that is, but it sure sounds nice! Say bonjour to our resident gentilhomme!</p>
-            </article>
-            <article class="individual-cat-info">
+                <p class="individual-cat-description">Louis comes all the way from the French Riviera. I don’t know
+                    where that is, but it sure sounds nice! Say bonjour to our resident gentilhomme!</p>
+            </fieldset>
+            <div class="vertical-connector"></div>
+            <fieldset class="individual-cat-info snake">
                 <img src="images/residentCats/hemmingway.jpg">
-                <p class="individual-cat-description">“A cat has absolute emotional honesty: human beings, for one reason or another, may hide their feelings, but a cat does not.”</p>
-            </article>
+                <p class="individual-cat-description">“A cat has absolute emotional honesty: human beings, for one
+                    reason or another, may hide their feelings, but a cat does not.”</p>
+            </fieldset>
+            <fieldset id="snake-tail"></fieldset>
         </section>
 
     </div>
@@ -124,4 +148,5 @@
     </footer>
 
 </body>
+
 </html>

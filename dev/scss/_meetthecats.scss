@@ -1,0 +1,23 @@
+.snake{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.vertical-connector{
+    height: 40px;
+    width: 50%;
+    border-right: solid 1px black;
+}
+
+.cats fieldset{
+    border: solid 2px black;
+    padding: 15px;
+}
+
+#snake-head{
+    margin-bottom: 0px;
+}
+
+#snake-tail{
+    display: none;
+}
