@@ -17,5 +17,12 @@
 @import "forms.scss";
 @import "footer.scss";
 
+//import page styles
+@import "about.scss";
+@import "menu.scss";
+@import "reservation.scss";
+@import "meetthecats.scss";
+@import "contact.scss";
+
 //import widescreen media query styles
 @import "widescreen_layout.scss";
