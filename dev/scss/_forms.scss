@@ -10,8 +10,8 @@ form label{
 }
 
 form h3{
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 0px;
     font-size: 1.25em;
     text-align: center;
     line-height: 1;
@@ -25,13 +25,13 @@ textarea{
     width: 100%;
     height: 60px;
     margin-bottom: 15px;
+    padding: 5px;
 }
 
-/*
-select{
-    width: 100%;
+input:focus{
+    outline: none;
+    background-color: rgb(231, 231, 231);
 }
-*/
 
 /*
 ---------------------------
@@ -41,7 +41,7 @@ class selectors
 
 .form-group input{
     width: 100%;
-    padding: 5px 0px 5px 0px;
+    padding: 5px;
     border-top: none;
     border-right: none;
     border-left: none;
@@ -131,6 +131,13 @@ id selectors
 }
 
 @media (min-width: $desktopWidth){
+    textarea{
+        height: 150px;
+    }
+
+    form label{
+        font-size: 1em;
+    }
 
     .reserve-form{
         margin-top: 45px;
@@ -141,4 +148,19 @@ id selectors
         margin-left: 50px;
         margin-right: 50px;
     }
+
+    .time-info-group-select{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .date-select,
+    .time-select{
+        width: 50%;
+    }
+
+    ::placeholder{
+        font-size: $body_font_size_desktop;
+    }
+
 }

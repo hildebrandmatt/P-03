@@ -47,6 +47,13 @@ img{
     max-width: 100%;
 }
 
+hr{
+    width: 175px;
+    border-top: none;
+    border-color: $primary_color;
+    margin-bottom: 30px;
+}
+
 /*
 --------------------------------
 class selectors
