@@ -69,3 +69,35 @@
     margin-bottom: 2px;
     font-family: $secondary_font;
 }
+
+@media (min-width: $desktopWidth){
+
+    .menu-category{
+        margin-left: 125px;
+        margin-right: 125px;
+    }
+
+    .menu-category h2{
+        font-size: $subheader_font_size_desktop;
+    }
+    
+    .menu-category .menu-item-name,
+    .menu-category .menu-item-price{
+        font-size: $body_font_size_desktop;
+    }
+
+    .menu-item{
+        padding-top: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .menu-item:last-child{
+        padding-bottom: 60px;
+    }
+
+    .menu-item-description{
+        font-size: $body_smaller_font_size_desktop;
+    }
+
+}
