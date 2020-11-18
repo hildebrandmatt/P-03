@@ -4,15 +4,46 @@
 }
 
 .story fieldset{
+    border: solid 1px $secondary_color;
     margin: 5px 5px 8px 5px;
 	line-height: 1;
 	padding: 15px;
-    color: white;
+    color: $secondary_color;
     background: linear-gradient(0deg, rgba(0,0,0,0.8) 75%,rgba(0,0,0,.559165) 88%,transparent);
 	position: absolute;
 	bottom: 0;
 	left: 0;
     max-width: 100%;
+}
+
+.mission{
+    position: relative;
+    margin: 25px 17px 0px 17px;
+}
+
+.mission fieldset{
+    border: solid 1px $secondary_color;
+    margin: 5px 5px 8px 5px;
+	line-height: 1;
+	padding: 15px;
+    color: $secondary_color;
+    background: linear-gradient(0deg, rgba(0,0,0,0.8) 75%,rgba(0,0,0,.559165) 88%,transparent);
+	position: absolute;
+	bottom: 200px;
+	left: 0;
+    max-width: 100%;
+}
+
+#mission-button{
+    font-family: $secondary_font;
+    color: $primary_color;
+    background-color: $secondary_color;
+    padding: 10px;
+    border-radius: 12px;
+    display: block;
+    margin: 10px;
+    width: 85px;
+    text-align: center;
 }
 
 .accomplishments{
@@ -21,10 +52,11 @@
 }
 
 .accomplishments fieldset{
+    border: solid 1px $secondary_color;
     margin: 5px 5px 8px 5px;
 	line-height: 1;
 	padding: 15px;
-	color: white;
+	color: $secondary_color;
     background: linear-gradient(0deg, rgba(0,0,0,0.8) 75%,rgba(0,0,0,.559165) 88%,transparent);
 	position: absolute;
 	bottom: 0;
