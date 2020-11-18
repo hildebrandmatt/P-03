@@ -87,3 +87,46 @@ styling accomplishments
 .accomplishments legend{
     font-size: 1.38em;
 }
+
+
+@media (min-width: $desktopWidth){
+
+/*
+-----------------------
+styling story
+-----------------------
+*/
+    .story{
+        margin-bottom: 60px;
+    }
+
+    .story fieldset{
+        color: $primary_color;
+        background: none;
+        border: solid 2px $primary_color;
+        width: 420px;
+        padding-right: 160px;
+    }
+    
+    .story div{
+        margin: auto;
+        text-align: center;
+        margin-top: 70px;
+        margin-bottom: 40px;
+    }
+
+    .story img{
+        width: 380px;
+        z-index: 1;
+        position: relative;
+        left: 448px;
+        top: 40px;
+    }
+/*
+-----------------------
+styling accomplishments
+-----------------------
+*/
+
+
+}
