@@ -82,13 +82,14 @@ class selectors
     padding-bottom: 25px;
 }
 
-.submit-group input{
+.submit-group input{ //why won't it centerrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
     font-family: $secondary_font;
     color: $secondary_color;
     background-color: $primary_color;
     padding: 10px 20px 10px 20px;
     border: none;
     border-radius: 12px;
+    width: 80px;
 }
 
 .form-group .select-month,
@@ -105,19 +106,19 @@ class selectors
     width: 70%;
 }
 
-.agree{
-    padding-left: 35px;
-    padding-right: 35px;
+.select-ampm{
+    padding-bottom: 15px;
 }
 
-.agree label{
-    padding-bottom: 25px;
+.agree{
+    padding: 0px 35px 10px 25px;
 }
 
 .agree a{
     color: $primary_color;
     text-decoration-line: underline;
 }
+
 
 /*
 ---------------------------
