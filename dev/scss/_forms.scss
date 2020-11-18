@@ -129,3 +129,16 @@ id selectors
 #pt{
     margin-bottom: 15px;
 }
+
+@media (min-width: $desktopWidth){
+
+    .reserve-form{
+        margin-top: 45px;
+        margin-bottom: 80px;
+    }
+
+    .form-group{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
