@@ -5,72 +5,71 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>The Tuxedo Cat | Reservation</title>
-    <link   rel="stylesheet" 
-            href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <!-- Put fonts here! -->
-    <link   rel="preconnect" 
-            href="https://fonts.gstatic.com">
-    <link   href="https://fonts.googleapis.com/css2?family=Lato&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap" 
-            rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <!--<div class="top">-->
-        <header class="header-bar">
-            <img src="images/resized/reserve_banner_large.jpg"
-            alt="Cat stalking a rosy drink"
-            srcset="images/resized/reserve_banner_large.jpg 1920w,
+    <header class="header-bar">
+        <img src="images/resized/reserve_banner_large.jpg" alt="Cat stalking a rosy drink" srcset="images/resized/reserve_banner_large.jpg 1920w,
                     images/resized/reserve_banner_med.jpg 634w,
-                    images/resized/reserve_banner_small.jpg 480w"
-            sizes="(max-width: 1920px) calc(100vw) 1920px">
-            <h1>The Tuxedo Cat</h1>
-            <h2>Cat bar and lounge</h2>
-            <nav role="navigation" class="nav-general">
-                <div class="menuToggle">
-                    <input type="checkbox" />
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <ul class="nav-bar">
-                        <li><a class="nav-a" href="about.html">About</a></li>
-                        <li><a class="nav-a" href="menu.html">Menu</a></li>
-                        <li><a class="nav-a current-page" href="reservation.html">Reservation</a></li>
-                        <li><a class="nav-a" href="meet_the_cats.html">Meet the cats</a></li>
-                        <li><a class="nav-a" href="contact.html">Contact</a></li>
-                        <li id="li-circle"></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+                    images/resized/reserve_banner_small.jpg 480w" sizes="(max-width: 1920px) calc(100vw) 1920px">
+        <h1>The Tuxedo Cat</h1>
+        <h2>Cat bar and lounge</h2>
+        <nav role="navigation" class="nav-general">
+            <div class="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul class="nav-bar">
+                    <li><a class="nav-a" href="about.html">About</a></li>
+                    <li><a class="nav-a" href="menu.html">Menu</a></li>
+                    <li><a class="nav-a current-page" href="reservation.html">Reservation</a></li>
+                    <li><a class="nav-a" href="meet_the_cats.html">Meet the cats</a></li>
+                    <li><a class="nav-a" href="contact.html">Contact</a></li>
+                    <li id="li-circle"></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <!--</div>-->
 
     <div class="wrapper">
         <section class="page-intro">
             <fieldset>
-            <legend>Make a Reservation</legend>
-                <p>In order to ensure our kitties don't get overwhelmed and can move about comfortably, there is a cap on the number of visitors at any given time. Booking a reservation is the best way to guarantee your visit and avoid the disappointment of not being able to get in</p>
-                <p>If space is available, walk-ins are accepted at the front desk. Please keep in mind that capacity is still limited and can't always accomodate larger groups.</p>
+                <legend>Make a Reservation</legend>
+                <p>In order to ensure our kitties don't get overwhelmed and can move about comfortably, there is a cap
+                    on the number of visitors at any given time. Booking a reservation is the best way to guarantee your
+                    visit and avoid the disappointment of not being able to get in</p>
+                <p>If space is available, walk-ins are accepted at the front desk. Please keep in mind that capacity is
+                    still limited and can't always accomodate larger groups.</p>
             </fieldset>
         </section>
 
         <section class="reserve-form">
             <form action="/" class="form" method="post">
                 <fieldset>
-                <legend>Reservation Form</legend>
+                    <legend>Reservation Form</legend>
 
-                <h3>Your Information</h3>
-                <div class="form-group basic-info-group">
-                    <div class="form-group name-group">
-                        <input type="text" placeholder="Name..." id="nm" name="nm">
-                    </div>
-                    <div class="form-group email-group">
-                        <input type="email" placeholder="Email..." id="email" name="email">
-                    </div>
-                    <div class="form-group phone-group">
-                        <input type="text" placeholder="Phone..." id="phn" name="phn">
-                    </div>
-                    <div class="form-group method-group">
-                        <label for="method-group">Preferred method of contact:</label>
+                    <h3>Your Information</h3>
+                    <div class="form-group basic-info-group">
+                        <div class="form-group name-group">
+                            <input type="text" placeholder="Name..." id="nm" name="nm">
+                        </div>
+                        <div class="form-group email-group">
+                            <input type="email" placeholder="Email..." id="email" name="email">
+                        </div>
+                        <div class="form-group phone-group">
+                            <input type="text" placeholder="Phone..." id="phn" name="phn">
+                        </div>
+                        <div class="form-group method-group">
+                            <label for="method-group">Preferred method of contact:</label>
                             <div class="method-click">
                                 <input type="radio" id="method-email" name="method-email" value="method-email">
                                 <label for="method-email">Email</label>
@@ -80,124 +79,126 @@
                                 <label for="method-email">Call</label>
                             </div>
                         </div>
-                    <div class="form-group party-group">
-                        <input type="number" placeholder="Number of people (max 4)..." id="pt" name="pt">
-                    </div>                   
-                    <div class="form-group comment-group">
-                        <textarea name="comments" placeholder="Comments/special requests..." id="comments"></textarea>
-                    </div>
-                </div>
-
-                <h3>Select a Time</h3>
-                <div class="form-group time-info-group"> <!--may needa put more divs so that we can make them flex into two columns?-->
-                    <div class="form-group select-month">
-                        <label for="month">Month:</label>
-                        <select name="month" id="month">
-                            <option value="Jan">January</option>
-                            <option value="Feb">February</option>
-                            <option value="Mar">March</option>
-                            <option value="Apr">April</option>
-                            <option value="May">May</option>
-                            <option value="Jun">June</option>
-                            <option value="Jul">July</option>
-                            <option value="Aug">August</option>
-                            <option value="Sep">September</option>
-                            <option value="Oct">October</option>
-                            <option value="Nov">November</option>
-                            <option value="Dec">December</option>
-                        </select>
-                    </div>
-                    <div class="form-group select-day">
-                        <label for="day">Day:</label>
-                        <select name="day" id="day">
-                            <option value="01">01</option>
-                            <option value="02">02</option>
-                            <option value="03">03</option>
-                            <option value="04">04</option>
-                            <option value="05">05</option>
-                            <option value="06">06</option>
-                            <option value="07">07</option>
-                            <option value="08">08</option>
-                            <option value="09">09</option>
-                            <option value="10">10</option>
-                            <option value="11">11</option>
-                            <option value="12">12</option>
-                            <option value="13">13</option>
-                            <option value="14">14</option>
-                            <option value="15">15</option>
-                            <option value="16">16</option>
-                            <option value="17">17</option>
-                            <option value="18">18</option>
-                            <option value="19">19</option>
-                            <option value="20">20</option>
-                            <option value="21">21</option>
-                            <option value="22">22</option>
-                            <option value="23">23</option>
-                            <option value="24">24</option>
-                            <option value="25">25</option>
-                            <option value="26">26</option>
-                            <option value="27">27</option>
-                            <option value="28">28</option>
-                            <option value="29">29</option>
-                            <option value="30">30</option>
-                            <option value="31">31</option>
-                        </select>
-                    </div>
-                    <div class="form-group select-year">
-                        <label for="year">Year:</label>
-                        <select name="year" id="year">
-                            <option value="2020">2020</option>
-                            <option value="2021">2021</option>
-                            <option value="2022">2022</option>
-                            <option value="2023">2023</option>
-                            <option value="2024">2024</option>
-                            <option value="2025">2025</option>
-                        </select>
+                        <div class="form-group party-group">
+                            <input type="number" placeholder="Number of people (max 4)..." id="pt" name="pt">
+                        </div>
+                        <div class="form-group comment-group">
+                            <textarea name="comments" placeholder="Comments/special requests..."
+                                id="comments"></textarea>
+                        </div>
                     </div>
 
-                    <div class="form-group select-hour">
-                        <label for="hour">Hour:</label>
-                        <select name="hour" id="hour">
-                            <option value="01">01</option>
-                            <option value="02">02</option>
-                            <option value="03">03</option>
-                            <option value="04">04</option>
-                            <option value="05">05</option>
-                            <option value="06">06</option>
-                            <option value="07">07</option>
-                            <option value="08">08</option>
-                            <option value="09">09</option>
-                            <option value="10">10</option>
-                            <option value="11">11</option>
-                            <option value="12">12</option>
-                        </select>
+                    <h3>Select a Time</h3>
+                    <div class="form-group time-info-group">
+                        <!--may needa put more divs so that we can make them flex into two columns?-->
+                        <div class="form-group select-month">
+                            <label for="month">Month:</label>
+                            <select name="month" id="month">
+                                <option value="Jan">January</option>
+                                <option value="Feb">February</option>
+                                <option value="Mar">March</option>
+                                <option value="Apr">April</option>
+                                <option value="May">May</option>
+                                <option value="Jun">June</option>
+                                <option value="Jul">July</option>
+                                <option value="Aug">August</option>
+                                <option value="Sep">September</option>
+                                <option value="Oct">October</option>
+                                <option value="Nov">November</option>
+                                <option value="Dec">December</option>
+                            </select>
+                        </div>
+                        <div class="form-group select-day">
+                            <label for="day">Day:</label>
+                            <select name="day" id="day">
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                        </div>
+                        <div class="form-group select-year">
+                            <label for="year">Year:</label>
+                            <select name="year" id="year">
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group select-hour">
+                            <label for="hour">Hour:</label>
+                            <select name="hour" id="hour">
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </div>
+                        <div class="form-group select-minute">
+                            <label for="minute">Minute:</label>
+                            <select name="minute" id="minute">
+                                <option value="00-minute">:00</option>
+                                <option value="15-minute">:15</option>
+                                <option value="30-minute">:30</option>
+                                <option value="45-minute">:45</option>
+                            </select>
+                        </div>
+                        <div class="form-group select-ampm">
+                            <label for="ampm">AM/PM:</label>
+                            <select name="ampm" id="ampm1">
+                                <option value="AM">AM</option>
+                                <option value="PM">PM</option>
+                            </select>
+                        </div>
+                        <div class="agree-group agree">
+                            <input type="checkbox" id="agree-terms" name="at[]">
+                            <label for="agree-terms">By submitting a reservation request, you agree to our <a
+                                    href="#0">terms and conditions.</a></label>
+                        </div>
+                        <div class="submit-group submit-button">
+                            <input type="submit" value="Submit">
+                        </div>
                     </div>
-                    <div class="form-group select-minute">
-                        <label for="minute">Minute:</label>
-                        <select name="minute" id="minute">
-                            <option value="00-minute">:00</option>
-                            <option value="15-minute">:15</option>
-                            <option value="30-minute">:30</option>
-                            <option value="45-minute">:45</option>
-                        </select>
-                    </div>
-                    <div class="form-group select-ampm">
-                        <label for="ampm">AM/PM:</label>
-                        <select name="ampm" id="ampm1">
-                            <option value="AM">AM</option>
-                            <option value="PM">PM</option>
-                        </select>
-                    </div>
-                    <div class="agree-group agree">
-                        <input type="checkbox" id="agree-terms" name="at[]">
-                        <label for="agree-terms">By submitting a reservation request, you agree to our <a href="#0">terms and conditions.</a></label>
-                    </div>
-                    <div class="submit-group submit-button">
-                        <input type="submit" value="Submit">
-                    </div>
-                </div>
                 </fieldset>
-            </fieldset>
             </form>
         </section>
 
@@ -216,4 +217,5 @@
     </footer>
 
 </body>
+
 </html>
