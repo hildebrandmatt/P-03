@@ -79,6 +79,57 @@
 }
 
 @media (min-width: $desktopWidth){
+
+    .adoption{
+        margin-bottom: 60px;
+        margin-top: 0px;
+    }
+
+    .adoption fieldset{
+        color: $primary_color;
+        background: none;
+        border: solid 2px $primary_color;
+        width: 280px;
+        padding-right: 150px;
+        padding-left: 30px;
+        padding-top: 20px;
+    }
+    
+    .adoption div{
+        margin: auto;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    
+    .adoption a{
+        color: $secondary_color;
+        border: solid 1px $primary_color;
+        background-color: $primary_color;
+        padding: 14px 28px;
+    }
+
+    .adoption img{
+        width: 360px;
+        z-index: 5;
+        position: relative;
+        left: 329px;
+        top: 80px;
+    }
+
+
+
+
+
+
+
+
+    /*
+    -----------------------
+    styling the cat snake
+    -----------------------
+    */
+
     .vertical-connector{
         display: none;
     }
@@ -108,13 +159,6 @@
         border-bottom-width: 1px;
     }
 
-    /*.cats fieldset:nth-child(4n+1){
-        border-left:none;
-    }
-
-    .cats fieldset:nth-child(4n-1){
-        border-right:none;
-    }*/
     .individual-cat-info:nth-of-type(2n){
         border-right: none;
     }
