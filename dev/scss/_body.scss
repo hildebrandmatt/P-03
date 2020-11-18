@@ -47,29 +47,6 @@ img{
     max-width: 100%;
 }
 
-/*as of this moment this stuff doesn't work when i put it into the forms scss */
-form label{
-    font-family: $secondary_font;
-    font-size: $body_font_size_mobile;
-}
-
-form h3{
-    margin-top: 0px;
-    font-size: 1.25em;
-    text-align: center;
-    line-height: 1;
-}
-
-.form-group{
-    margin: 5px;
-}
-
-.wrapper{
-    max-width: 400px;
-    margin: auto;
-}
-
-
 /*
 --------------------------------
 class selectors
@@ -77,6 +54,11 @@ class selectors
 */
 .page-intro{
     margin-top: 25px;
+}
+
+.wrapper{
+    max-width: 400px;
+    margin: auto;
 }
 
 /*

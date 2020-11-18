@@ -1,0 +1,99 @@
+/*
+---------------------------
+html selectors
+---------------------------
+*/
+
+form label{
+    font-family: $secondary_font;
+    font-size: $body_font_size_mobile;
+}
+
+form h3{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 1.25em;
+    text-align: center;
+    line-height: 1;
+}
+
+label{
+    padding: 5px 0px 5px 0px;
+}
+
+textarea{
+    width: 100%;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+select{
+    width: 100%;
+}
+
+
+/*
+---------------------------
+class selectors
+---------------------------
+*/
+
+.name-group input,
+.email-group input,
+.phone-group input{
+    width: 100%;
+    padding: 5px 0px 5px 0px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: solid 1px $primary_color;
+}
+
+.form-group{
+    margin: 10px;
+}
+
+.method-click{
+    display: flex;
+}
+
+.method-click input{
+    width: 10px;
+}
+
+.method-click label{
+    padding-top: 3px;
+    padding-right: 20px;
+}
+
+.time-info-group{
+    margin-bottom: 30px;
+}
+
+.agree{
+    display: flex;
+}
+
+.agree input{
+    width: 25px;
+}
+
+.agree label{
+    padding-top: 3px;
+    padding-bottom: 25px;
+}
+
+.submit-group input{
+    display: block;
+    color: $secondarry_color;
+    background-color: $primary_color;
+}
+
+/*
+---------------------------
+id selectors
+---------------------------
+*/
+#pt{
+    margin-bottom: 15px;
+}

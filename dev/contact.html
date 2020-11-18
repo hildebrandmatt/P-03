@@ -71,31 +71,33 @@
                 <h3>Your Information</h3>
                 <div class="form-group basic-info-group">
                         <div class="form-group name-group">
-                            <label for="nm">Name...</label>
                             <input type="text" placeholder="Name..." id="nm" name="nm">
                         </div>
                         <div class="form-group email-group">
-                            <label for="email">Email...</label>
                             <input type="email" placeholder="Email..." id="email" name="email">
                         </div>
                         <div class="form-group phone-group">
-                            <label for="phn">Phone...</label>
                             <input type="number" placeholder="Phone..." id="phn" name="phn">
                         </div>
                         <div class="form-group method-group">
                             <label for="method-group">Preferred method of contact:</label>
-                            <input type="radio" id="method-email" name="method-email" value="method-email">
-                            <label for="method-email">Email</label>
-                            <input type="radio" id="method-text" name="method-text" value="method-text">
-                            <label for="method-text">Text</label>
-                            <input type="radio" id="method-call" name="method-call" value="method-call">
-                            <label for="method-call">Call</label>
+                            <div class="method-click">
+                                <input type="radio" id="method-email" name="method-email" value="method-email">
+                                <label for="method-email">Email</label>
+                                <input type="radio" id="method-text" name="method-text" value="method-text">
+                                <label for="method-text">Text</label>
+                                <input type="radio" id="method-call" name="method-call" value="method-call">
+                                <label for="method-call">Call</label>
+                            </div>
                         </div>
                         <div class="form-group comment-group">
-                            <label for="comments">Comments: </label>
                             <textarea name="comments" placeholder="Comments/special requests..." id="comments"></textarea>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group agree">
+                            <input type="checkbox" id="agree-terms" name="at[]">
+                            <label for="agree-terms">I would like to receive The Tuxedo Cat's newsletter :3</label>
+                        </div>
+                        <div class="submit-group submit-button">
                             <input type="submit" value="Submit">
                         </div>
                     </div>

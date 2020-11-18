@@ -61,32 +61,29 @@
                 <h3>Your Information</h3>
                 <div class="form-group basic-info-group">
                     <div class="form-group name-group">
-                        <label for="nm">Name...</label>
                         <input type="text" placeholder="Name..." id="nm" name="nm">
                     </div>
                     <div class="form-group email-group">
-                        <label for="email">Email...</label>
                         <input type="email" placeholder="Email..." id="email" name="email">
                     </div>
                     <div class="form-group phone-group">
-                        <label for="phn">Phone...</label>
                         <input type="text" placeholder="Phone..." id="phn" name="phn">
                     </div>
                     <div class="form-group method-group">
                         <label for="method-group">Preferred method of contact:</label>
-                        <input type="radio" id="method-email" name="method-email" value="method-email">
-                        <label for="method-email">Email</label>
-                        <input type="radio" id="method-text" name="method-text" value="method-text">
-                        <label for="method-text">Text</label>
-                        <input type="radio" id="method-call" name="method-call" value="method-call">
-                        <label for="method-email">Call</label>
-                    </div>
+                            <div class="method-click">
+                                <input type="radio" id="method-email" name="method-email" value="method-email">
+                                <label for="method-email">Email</label>
+                                <input type="radio" id="method-text" name="method-text" value="method-text">
+                                <label for="method-text">Text</label>
+                                <input type="radio" id="method-call" name="method-call" value="method-call">
+                                <label for="method-email">Call</label>
+                            </div>
+                        </div>
                     <div class="form-group party-group">
-                        <label for="party-group">Number of people (max 4)...</label>
-                        <input type="number" id="pt" name="pt">
-                    </div>
+                        <input type="number" placeholder="Number of people (max 4)..." id="pt" name="pt">
+                    </div>                   
                     <div class="form-group comment-group">
-                        <label for="comments">Comments: </label>
                         <textarea name="comments" placeholder="Comments/special requests..." id="comments"></textarea>
                     </div>
                 </div>
@@ -192,8 +189,12 @@
                         </select>
                     </div>
                 </div>
-                <div class="form-group">
-                    <input type="submit" value="Submit">
+                <div class="form-group agree">
+                    <input type="checkbox" id="agree-terms" name="at[]">
+                    <label for="agree-terms">By submitting a reservation request, you agree to our <a href="#0">terms and conditions.</a></label>
+                </div>
+                <div class="submit-group submit-button">
+                    <input type="submit" value="submit">
                 </div>
 
             </fieldset>
