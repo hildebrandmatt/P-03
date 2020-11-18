@@ -73,3 +73,15 @@
 #snake-tail{
     display: none;
 }
+
+@media (min-width: $desktopWidth){
+    .vertical-connector{
+        display: none;
+    }
+
+    .individual-cat-description{
+        position: relative;
+        color: $primary_color;
+        background: none;
+    }
+}
