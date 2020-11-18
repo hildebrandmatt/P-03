@@ -27,10 +27,11 @@ textarea{
     margin-bottom: 15px;
 }
 
+/*
 select{
     width: 100%;
 }
-
+*/
 
 /*
 ---------------------------
@@ -38,9 +39,7 @@ class selectors
 ---------------------------
 */
 
-.name-group input,
-.email-group input,
-.phone-group input{
+.form-group input{
     width: 100%;
     padding: 5px 0px 5px 0px;
     border-top: none;
@@ -84,9 +83,40 @@ class selectors
 }
 
 .submit-group input{
-    display: block;
+    font-family: $secondary_font;
     color: $secondary_color;
     background-color: $primary_color;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: 12px;
+}
+
+.form-group .select-month,
+.form-group .select-day,
+.form-group .select-year,
+.form-group .select-hour,
+.form-group .select-minute,
+.form-group .select-ampm{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group select{
+    width: 70%;
+}
+
+.agree{
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.agree label{
+    padding-bottom: 25px;
+}
+
+.agree a{
+    color: $primary_color;
+    text-decoration-line: underline;
 }
 
 /*
