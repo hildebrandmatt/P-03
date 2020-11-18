@@ -126,16 +126,6 @@ class selectors
     font-family: $secondary_font;
 }
 
-.adoption a{
-    font-family: $secondary_font;
-    text-decoration: none;
-    color: $primary_color;
-    border: solid 1px $secondary_color;
-    border-radius: 15px;
-    background-color: $secondary_color;
-    padding: 10px;
-}
-
 img{
     max-width: 100%;
 }

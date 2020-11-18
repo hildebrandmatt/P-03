@@ -1,3 +1,38 @@
+.adoption{
+    position: relative;
+    margin: 25px 17px 0px 17px;
+}
+
+.adoption fieldset{
+    margin: 5px 5px 8px 5px;
+	line-height: 1;
+	padding: 15px;
+	color: white;
+    background: linear-gradient(0deg, rgba(0,0,0,0.8) 80%,rgba(0,0,0,.559165) 88%,transparent);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+    max-width: 100%;
+    border-color: white;
+}
+
+.adoption div{
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.adoption a{
+    font-family: $secondary_font;
+    text-decoration: none;
+    color: $primary_color;
+    border: solid 1px $secondary_color;
+    border-radius: 12px;
+    background-color: $secondary_color;
+    padding: 6px 12px;
+}
+
 .snake{
     margin-top: 0px;
     margin-bottom: 0px;
@@ -14,8 +49,25 @@
     padding: 15px;
 }
 
+.individual-cat-info{
+    position: relative;
+}
+
+.individual-cat-description{
+    position: absolute;
+    background: linear-gradient(0deg, rgba(0,0,0,0.8) 80%,rgba(0,0,0,.559165) 88%,transparent);
+    color: white;
+    bottom: 2px;
+    left: 0px;
+    max-width: 100%;
+    margin: 15px;
+    padding: 10px;
+    padding-top: 15px;
+    line-height: 16px;
+}
+
 #snake-head{
-    margin-bottom: 0px;
+    margin-top: 30px;
 }
 
 #snake-tail{
