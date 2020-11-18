@@ -1,0 +1,71 @@
+.btn-area{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.menu-btn{
+    font-family: $secondary_font;
+    font-size: $body_font_size_mobile;
+    border: solid 1px $primary_color;
+    width: 25%;
+    max-width: 100px;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.menu-btn:hover{
+    font-family: $secondary_font;
+    background-color: $primary_color;
+    color: $secondary_color;
+    border: solid 1px black;
+    padding: 15px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.menu-category{
+    border: solid 2px $primary_color;
+    margin: 35px 15px 45px 15px;
+    padding: 10px 20px 15px 20px;
+}
+
+.menu-category h2{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: $subheader_font_size_mobile;
+}
+
+.menu-category p{
+    line-height: 1.25;
+}
+
+.menu-item{
+    padding: 10px;
+}
+
+.menu-flex-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-item-description{
+    margin-top: 0;
+    font-family: $secondary_font;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.menu-item-name{
+    margin-bottom: 2px;
+    font-family: $secondary_font;
+}
+
+.menu-item-price{
+    margin-bottom: 2px;
+    font-family: $secondary_font;
+}
