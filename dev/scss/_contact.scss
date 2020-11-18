@@ -22,9 +22,44 @@ class selectors
 
 @media (min-width: $desktopWidth){
     .contact-us img{
-        width: 200px;
+        width: 100%;
         margin-top: 25px;
         margin-bottom: 20px;
         align-self: center;;
+    }
+
+    .contact-us p{
+        margin: 0;
+        text-align: left;
+    }
+
+    .map img{
+        margin: 0;
+    }
+
+    .contact-info-group{
+        padding: 25px 35px 20px 35px;
+        display: grid;
+        grid-template-columns: 1fr 33%;
+        grid-template-rows: repeat(2);
+        grid-template-areas:
+            "contact    map"
+            "operation  map";
+    }
+
+    .contact-info{
+        grid-area: contact;
+    }
+
+    .map{
+        grid-area: map;
+    }
+
+    .operation-hours{
+        grid-area: operation;
+    }
+
+    .contact-form{
+        margin-top: 45px;
     }
 }
