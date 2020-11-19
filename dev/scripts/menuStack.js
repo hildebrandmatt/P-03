@@ -71,7 +71,7 @@ function menuFlip(menuIndex){
 
     var pullPageOut = setInterval(function(){
         flippedMenu.style.top = (parseInt(flippedMenu.style.top) - 7 + 'px')
-        flippedMenu.style.left = (parseInt(flippedMenu.style.left) - 5 + 'px')
+        if(window.innerWidth >= 980){flippedMenu.style.left = (parseInt(flippedMenu.style.left) - 5 + 'px')}
     }, 3)
 
     
@@ -80,14 +80,14 @@ function menuFlip(menuIndex){
         flippedMenu.style.zIndex = "8"
         var pushPageIn = setInterval(function(){
             flippedMenu.style.top = (parseInt(flippedMenu.style.top) + 7 + 'px')
-            flippedMenu.style.left = (parseInt(flippedMenu.style.left) + 5 + 'px')
-            if(parseInt(flippedMenu.style.left) == 0){
+            if(window.innerWidth >= 980){flippedMenu.style.left = (parseInt(flippedMenu.style.left) + 5 + 'px')}
+            if(parseInt(flippedMenu.style.top) >= 0){
                 clearInterval(pushPageIn)
                 reorderMenuStack(menuIndex)
                 menuSort()
             }
         }, 5)
-    }, 600)
+    }, 500)
 
 
     //setInterval(menuStack[menuIndex].style.left = (parseInt(menuStack[menuIndex].style.left) - 5 + "px"), 100)
