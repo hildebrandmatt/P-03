@@ -91,11 +91,8 @@ nav{
     align-items: center;
     justify-items: center;
     padding-top: 131px;
-    padding-inline-start: 0px;
     box-sizing: border-box;
     
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     list-style: none;
 
     background-color: $primary_color;
@@ -152,8 +149,6 @@ nav{
    
    opacity: 0; /* hide this */
    z-index: 102; /* and place it over the hamburger */
-   
-   -webkit-touch-callout: none;
  }
 
  
@@ -183,8 +178,15 @@ nav{
   */
  .menuToggle input:checked ~ span
  {
-   transform: translate(0px, 254px) rotate(45deg);
+   transform: translate(0px, 247px) rotate(45deg);
    position: fixed;
+   left: 50%;
+   margin-left: -14px;
+   top: 180px;
+ }
+
+ .menuToggle input:checked ~ .home-span{
+   top: 241px;
  }
  
  /*
@@ -202,7 +204,7 @@ nav{
   */
  .menuToggle input:checked ~ span:nth-last-child(2)
  {
-   transform: translate(0px, 240px) rotate(-45deg);
+   transform: translate(0px, 247px) rotate(-45deg);
    position: fixed;
  }
  
@@ -215,7 +217,14 @@ nav{
  
  .menuToggle input:checked
  {
-   top:247px;
+   top: 415px;
+   left: 50%;
+   margin-left: -20px;
+   position: fixed;
+ }
+
+ #header-home input:checked{
+   top: 476px;
  }
  
  .menuToggle input:checked ~ span
