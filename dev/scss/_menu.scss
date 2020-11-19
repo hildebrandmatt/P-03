@@ -93,6 +93,10 @@ styling the menu stack
     background-color: $secondary_color;
 }
 
+.invisible-menu{
+    display: block;
+}
+
 @media (min-width: $desktopWidth){
 
     .menu-category{

@@ -68,38 +68,26 @@ function reorderMenuStack(menuIndex){
 
 function menuFlip(menuIndex){
     let flippedMenu = menuStack[menuIndex]
+    flippedMenu.firstElementChild.style.display = "none"
 
     var pullPageOut = setInterval(function(){
-        flippedMenu.style.top = (parseInt(flippedMenu.style.top) - 7 + 'px')
-        if(window.innerWidth >= 980){flippedMenu.style.left = (parseInt(flippedMenu.style.left) - 5 + 'px')}
-    }, 3)
+        flippedMenu.style.top = (parseInt(flippedMenu.style.top) - 14 + 'px')
+        if(window.innerWidth >= 980){flippedMenu.style.left = (parseInt(flippedMenu.style.left) - 10 + 'px')} //IF $desktop_width CHANGES CHANGE THIS!!!
+    }, 1)
 
     
     reSort = setTimeout(function(){
         clearInterval(pullPageOut)
         flippedMenu.style.zIndex = "8"
         var pushPageIn = setInterval(function(){
-            flippedMenu.style.top = (parseInt(flippedMenu.style.top) + 7 + 'px')
-            if(window.innerWidth >= 980){flippedMenu.style.left = (parseInt(flippedMenu.style.left) + 5 + 'px')}
+            flippedMenu.style.top = (parseInt(flippedMenu.style.top) + 14 + 'px')
+            if(window.innerWidth >= 980){flippedMenu.style.left = (parseInt(flippedMenu.style.left) + 10 + 'px')} //IF $desktop_width CHANGES CHANGE THIS!!!
             if(parseInt(flippedMenu.style.top) >= 0){
                 clearInterval(pushPageIn)
                 reorderMenuStack(menuIndex)
                 menuSort()
+                flippedMenu.firstElementChild.style.display = "block"
             }
-        }, 5)
-    }, 500)
-
-
-    //setInterval(menuStack[menuIndex].style.left = (parseInt(menuStack[menuIndex].style.left) - 5 + "px"), 100)
-
-    /*$('div.card').click(function(){
-        $(flippedMenu).animate({
-            left: 15+'%', marginTop: 2+'em'
-        }, 500, 'easeOutBack', function(){
-            i--;$(flippedMenu).css('z-index', i)
-        }).animate({
-            left: 38+'%', marginTop: 0+'em'
-        },500, 'easeOutBack')
-    })*/
-
+        }, 1)
+    }, 250)
 }
