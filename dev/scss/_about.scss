@@ -188,8 +188,8 @@ styling mission
 .mission{
     background: none;
     display: grid;
-    grid-template-columns: repeat(2);
-    grid-template-rows: repeat(2);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
         "textbox   textbox"
         "textbox   textbox";
@@ -203,12 +203,12 @@ styling mission
 .mission fieldset{
     color: $primary_color;
     background: none;
+    background-color: $secondary_color;
     border: solid 2px $primary_color;
 }
 
 .mission-text a{
     color: $secondary_color;
-    border: solid 1px $primary_color;
     background-color: $primary_color;
     padding: 14px 28px;
     position: absolute;
