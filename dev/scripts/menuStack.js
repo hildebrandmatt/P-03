@@ -35,11 +35,15 @@ function menuSlideStack(){
 function menuButtonClick(buttonClicked){
     newMenuId = buttonClicked.replace("btn", "menu")
     newMenuIndex = menuSearch(newMenuId)
-    oldMenu = menuStack[0]
-
-    reorderMenuStack(newMenuIndex)
-
-    menuSort()
+    if(newMenuIndex != 0){
+        oldMenu = menuStack[0]
+    
+        menuFlip(newMenuIndex)
+    
+        //reorderMenuStack(newMenuIndex)
+    
+        //menuSort()
+    }
 }
 
 function menuSearch(newMenuId){
@@ -60,4 +64,42 @@ function reorderMenuStack(menuIndex){
         }
     }
     menuStack = tmpStack
+}
+
+function menuFlip(menuIndex){
+    let flippedMenu = menuStack[menuIndex]
+
+    var pullPageOut = setInterval(function(){
+        flippedMenu.style.top = (parseInt(flippedMenu.style.top) - 7 + 'px')
+        flippedMenu.style.left = (parseInt(flippedMenu.style.left) - 5 + 'px')
+    }, 3)
+
+    
+    reSort = setTimeout(function(){
+        clearInterval(pullPageOut)
+        flippedMenu.style.zIndex = "8"
+        var pushPageIn = setInterval(function(){
+            flippedMenu.style.top = (parseInt(flippedMenu.style.top) + 7 + 'px')
+            flippedMenu.style.left = (parseInt(flippedMenu.style.left) + 5 + 'px')
+            if(parseInt(flippedMenu.style.left) == 0){
+                clearInterval(pushPageIn)
+                reorderMenuStack(menuIndex)
+                menuSort()
+            }
+        }, 5)
+    }, 600)
+
+
+    //setInterval(menuStack[menuIndex].style.left = (parseInt(menuStack[menuIndex].style.left) - 5 + "px"), 100)
+
+    /*$('div.card').click(function(){
+        $(flippedMenu).animate({
+            left: 15+'%', marginTop: 2+'em'
+        }, 500, 'easeOutBack', function(){
+            i--;$(flippedMenu).css('z-index', i)
+        }).animate({
+            left: 38+'%', marginTop: 0+'em'
+        },500, 'easeOutBack')
+    })*/
+
 }
