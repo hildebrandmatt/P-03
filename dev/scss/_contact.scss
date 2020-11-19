@@ -26,8 +26,6 @@ class selectors
 @media (min-width: $desktopWidth){
     .contact-us img{
         width: 100%;
-        margin-top: 25px;
-        margin-bottom: 20px;
         align-self: center;;
     }
 
@@ -39,7 +37,7 @@ class selectors
     .contact-info-group{
         padding: 25px 35px 20px 35px;
         display: grid;
-        grid-template-columns: 1fr 33%;
+        grid-template-columns: 1fr 40%;
         grid-template-rows: repeat(2);
         grid-template-areas:
             "contact    map"

@@ -9,17 +9,32 @@ styling story
     margin: 35px 17px 0px 17px;
 }
 
+.story img{
+    position: relative;
+    margin-bottom: -309px;
+    z-index: 1;
+}
+
 .story fieldset{
     border: solid 1px $secondary_color;
-    margin: 5px 5px 8px 5px;
+    margin: 5px;
 	line-height: 1;
 	padding: 15px;
     color: $secondary_color;
     background: linear-gradient(0deg, rgba(0,0,0,0.8) 75%,rgba(0,0,0,.559165) 88%,transparent);
-	position: absolute;
+	position: relative;
 	bottom: 0;
 	left: 0;
     max-width: 100%;
+    text-align: left;
+}
+
+.image-overlay{
+    padding-top: 50px;
+    padding-bottom: 1px;
+    background: linear-gradient(0deg, rgba(0,0,0,0.8) 75%,rgba(0,0,0,.6) 88%,transparent);
+    position: relative;
+    z-index: 2;
 }
 
 
@@ -32,6 +47,7 @@ styling mission
 .mission{
     position: relative;
     margin: 25px 17px 0px 17px;
+    background: $primary_color;
 }
 
 .mission fieldset{
@@ -40,24 +56,41 @@ styling mission
 	line-height: 1;
 	padding: 15px;
     color: $secondary_color;
-    background: linear-gradient(0deg, rgba(0,0,0,0.8) 75%,rgba(0,0,0,.559165) 88%,transparent);
-	position: absolute;
-	bottom: 185px;
+    background: $primary_color;
+    position: relative;
+    bottom: 0;
 	left: 0;
     max-width: 100%;
 }
 
-#mission-button{
-    font-family: $secondary_font;
-    color: $primary_color;
-    background-color: $secondary_color;
-    padding: 10px;
-    border-radius: 12px;
-    display: block;
-    margin: 10px;
-    width: 85px;
-    text-align: center;
+.mission-text{
+    position: relative;
+    padding-top: 50px;
+    background: linear-gradient(0deg, rgba(0,0,0,0.8) 78%,rgba(0,0,0,.9) 88%,transparent);
+    z-index: 2;
 }
+
+.top-cat{
+    position: relative;
+    margin-bottom: -50px;
+    z-index: 1;
+}
+
+.bottom-cat{
+    position: relative;
+}
+
+
+.mission-text a{
+    font-family: $secondary_font;
+    text-decoration: none;
+    color: $primary_color;
+    border: solid 1px $secondary_color;
+    border-radius: 12px;
+    background-color: $secondary_color;
+    padding: 6px 12px;
+}
+
 
 
 /*
@@ -68,20 +101,35 @@ styling accomplishments
 
 .accomplishments{
     position: relative;
-    margin: 25px 17px 0px 17px;
+    margin: 35px 17px 0px 17px;
+}
+
+.accomplishments img{
+    position: relative;
+    margin-bottom: -250px;
+    z-index: 1;
 }
 
 .accomplishments fieldset{
     border: solid 1px $secondary_color;
-    margin: 5px 5px 8px 5px;
+    margin: 5px;
 	line-height: 1;
 	padding: 15px;
-	color: $secondary_color;
+    color: $secondary_color;
     background: linear-gradient(0deg, rgba(0,0,0,0.8) 75%,rgba(0,0,0,.559165) 88%,transparent);
-	position: absolute;
+	position: relative;
 	bottom: 0;
 	left: 0;
-	max-width: 100%;
+    max-width: 100%;
+    text-align: left;
+}
+
+.accomplishments .image-overlay{
+    padding-top: 50px;
+    padding-bottom: 1px;
+    background: linear-gradient(0deg, rgba(0,0,0,0.8) 75%,rgba(0,0,0,.6) 88%,transparent);
+    position: relative;
+    z-index: 2;
 }
 
 .accomplishments legend{
@@ -96,8 +144,13 @@ styling accomplishments
 styling story
 -----------------------
 */
-    .story{
-        margin-bottom: 60px;
+
+    .image-overlay{
+        padding-top: 0;
+        padding-bottom: 0;
+        background: none;
+        position: relative;
+        z-index: 1;
     }
 
     .story fieldset{
@@ -106,6 +159,7 @@ styling story
         border: solid 2px $primary_color;
         width: 420px;
         padding-right: 160px;
+        margin-top: -180px;
     }
     
     .story div{
@@ -117,22 +171,64 @@ styling story
 
     .story img{
         width: 380px;
-        z-index: 1;
+        z-index: 2;
         position: relative;
         left: 448px;
         top: 40px;
     }
+
+
+/*
+-----------------------
+styling mission
+-----------------------
+*/
+.mission{
+    background: none;
+    display: grid;
+    grid-template-columns: repeat(2);
+    grid-template-rows: repeat(2);
+    grid-template-areas: 
+        "textbox   textbox"
+        "textbox   textbox";
+}
+
+.mission-text{
+    background: none;
+    grid-area: textbox;
+}
+
+.mission fieldset{
+    color: $primary_color;
+    background: none;
+    border: solid 2px $primary_color;
+}
+
+.mission-text a{
+    color: $secondary_color;
+    border: solid 1px $primary_color;
+    background-color: $primary_color;
+    padding: 14px 28px;
+    position: absolute;
+}
+
+
 /*
 -----------------------
 styling accomplishments
 -----------------------
 */
+
     .accomplishments legend{
         font-size: 2.5em;
     }
 
-    .accomplishments{
-        margin-bottom: 100px;
+    .accomplishments .image-overlay{
+        padding-top: 0;
+        padding-bottom: 0;
+        background: none;
+        position: relative;
+        z-index: 1;
     }
 
     .accomplishments fieldset{
@@ -141,18 +237,19 @@ styling accomplishments
         border: solid 2px $primary_color;
         width: 420px;
         padding-right: 160px;
+        margin-top: -180px;
     }
     
     .accomplishments div{
         margin: auto;
         text-align: center;
         margin-top: 70px;
-        margin-bottom: 40px;
+        margin-bottom: 175px;
     }
 
     .accomplishments img{
         width: 380px;
-        z-index: 1;
+        z-index: 2;
         position: relative;
         left: 448px;
         top: 40px;
