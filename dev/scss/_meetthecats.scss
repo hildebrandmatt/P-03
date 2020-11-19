@@ -1,19 +1,38 @@
+/*
+--------------------------
+adoption styles
+--------------------------
+*/
+
 .adoption{
     position: relative;
     margin: 25px 17px 0px 17px;
 }
 
+.story img{
+    position: relative;
+    z-index: 1;
+}
+
 .adoption fieldset{
-    margin: 5px 5px 8px 5px;
+    border: solid 1px $secondary_color;
+    margin: 5px;
 	line-height: 1;
 	padding: 15px;
 	color: $secondary_color;
     background: linear-gradient(0deg, rgba(0,0,0,0.8) 80%,rgba(0,0,0,.559165) 88%,transparent);
-	position: absolute;
+	position: relative;
 	bottom: 0;
 	left: 0;
     max-width: 100%;
-    border: solid 1px $secondary_color;
+}
+
+.image-overlay{
+    padding-top: 50px;
+    margin-top: -278px;
+    background: linear-gradient(0deg, rgba(0,0,0,0.9) 75%,rgba(0,0,0,.6) 88%,transparent);
+    position: relative;
+    z-index: 2;
 }
 
 .adoption .rescues-button{
@@ -29,6 +48,13 @@
     background-color: $secondary_color;
     padding: 6px 12px;
 }
+
+
+/*
+--------------------------
+the great snek >:3
+--------------------------
+*/
 
 .snake{
     margin-top: 0px;
@@ -93,6 +119,7 @@
         border: solid 2px $primary_color;
         width: 420px;
         padding-right: 160px;
+        margin-top: -480px;
     }
     
     .adoption div{
@@ -114,6 +141,14 @@
         position: relative;
         left: 448px;
         top: 40px;
+    }
+
+    .image-overlay{
+        padding-top: 0;
+        padding-bottom: 0;
+        background: none;
+        position: relative;
+        z-index: 1;
     }
 
     /*
