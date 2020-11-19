@@ -68,7 +68,6 @@ function reorderMenuStack(menuIndex){
 
 function menuFlip(menuIndex){
     let flippedMenu = menuStack[menuIndex]
-    flippedMenu.firstElementChild.style.display = "none"
 
     var pullPageOut = setInterval(function(){
         flippedMenu.style.top = (parseInt(flippedMenu.style.top) - 14 + 'px')
@@ -86,7 +85,6 @@ function menuFlip(menuIndex){
                 clearInterval(pushPageIn)
                 reorderMenuStack(menuIndex)
                 menuSort()
-                flippedMenu.firstElementChild.style.display = "block"
             }
         }, 1)
     }, 250)
