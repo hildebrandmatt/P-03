@@ -2,6 +2,7 @@ var menuStack = document.getElementsByClassName("menu-category")
 
 $(document).ready(menuSort())
 $(".menu-btn").click(function(){ menuButtonClick(this.id) })
+$(window).resize(function(){menuSlideStack()})
 
 function menuSort(){
     menuStack[0].style.zIndex = "3"
@@ -14,11 +15,20 @@ function menuSort(){
     menuStack[2].style.top="-30px"
     menuStack[3].style.top="-45px"
 
+    menuSlideStack()
+}
+
+function menuSlideStack(){
     if(window.innerWidth >= 980){    
         menuStack[0].style.left="0px"
         menuStack[1].style.left="-15px"
         menuStack[2].style.left="-30px"
         menuStack[3].style.left="-45px"
+    } else {  
+        menuStack[0].style.left="0px"
+        menuStack[1].style.left="0px"
+        menuStack[2].style.left="0px"
+        menuStack[3].style.left="0px"
     }
 }
 
