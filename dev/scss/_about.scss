@@ -127,8 +127,34 @@ styling story
 styling accomplishments
 -----------------------
 */
-.accomplishments legend{
-    font-size: 2.5em;
-}
+    .accomplishments legend{
+        font-size: 2.5em;
+    }
 
+    .accomplishments{
+        margin-bottom: 100px;
+    }
+
+    .accomplishments fieldset{
+        color: $primary_color;
+        background: none;
+        border: solid 2px $primary_color;
+        width: 420px;
+        padding-right: 160px;
+    }
+    
+    .accomplishments div{
+        margin: auto;
+        text-align: center;
+        margin-top: 70px;
+        margin-bottom: 40px;
+    }
+
+    .accomplishments img{
+        width: 380px;
+        z-index: 1;
+        position: relative;
+        left: 448px;
+        top: 40px;
+    }
 }
