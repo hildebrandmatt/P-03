@@ -8,12 +8,13 @@
     font-family: $secondary_font;
     font-size: $body_font_size_mobile;
     border: solid 1px $primary_color;
-    width: 25%;
-    max-width: 100px;
+    width: 30%;
+    max-width: 120px;
     padding: 15px;
     margin: 10px;
     text-align: center;
     transition: 0.4s;
+    background-color: $secondary_color;
 }
 
 .menu-btn:hover{
