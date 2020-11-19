@@ -80,7 +80,6 @@ styling mission
     position: relative;
 }
 
-
 .mission-text a{
     font-family: $secondary_font;
     text-decoration: none;
@@ -91,6 +90,10 @@ styling mission
     padding: 6px 12px;
 }
 
+.mission-text .mission-button{
+    text-align: center;
+    padding-top: 10px;
+}
 
 
 /*
