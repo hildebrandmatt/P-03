@@ -70,11 +70,39 @@
     font-family: $secondary_font;
 }
 
+/*
+-----------------------
+styling the menu stack
+-----------------------
+*/
+
+#menu-holder{
+    position: relative;
+    //width: 400px;
+    height: 600px;
+    margin-top: 60px;
+    margin-bottom: 120px;
+}
+
+.menu-category{
+    position: absolute;
+    margin: 15px;
+    height: 600px;
+    background-color: $secondary_color;
+}
+
+#beer-menu{
+    //z-index: 1;
+}
+
+
 @media (min-width: $desktopWidth){
 
     .menu-category{
         margin-left: 125px;
         margin-right: 125px;
+        width: 566px;
+        height: 750px;
     }
 
     .menu-category h2{
@@ -100,4 +128,20 @@
         font-size: $body_smaller_font_size_desktop;
     }
 
+    .menu-btn{
+        font-size: $body_font_size_desktop;
+    }
+
+    /*
+    -----------------------
+    styling the menu stack
+    -----------------------
+    */
+
+    #menu-holder{
+        width: 566px;
+        height: 750px;
+        margin-top: 120px;
+        margin-bottom: 140px;
+    }
 }
