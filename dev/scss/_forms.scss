@@ -82,7 +82,7 @@ class selectors
     text-align: center;
 }
 
-.submit-group input{ //why won't it centerrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+.submit-group input{
     font-family: $secondary_font;
     color: $secondary_color;
     background-color: $primary_color;
@@ -130,7 +130,17 @@ id selectors
     margin-bottom: 15px;
 }
 
+
+
+
+/*
+---------------------------
+media query desktop
+---------------------------
+*/
+
 @media (min-width: $desktopWidth){
+
     textarea{
         height: 150px;
     }
@@ -165,6 +175,14 @@ id selectors
 
     .agree label{
         padding-top: 1px;
+    }
+
+    #agree-terms{
+        margin-left: 35px;
+    }
+
+    #agree-newsletter{
+        margin-left: 35px;
     }
 
 }
