@@ -21,7 +21,7 @@ styling story
 	line-height: 1;
 	padding: 15px;
     color: $secondary_color;
-    background: linear-gradient(0deg, rgba(0,0,0,0.8) 75%,rgba(0,0,0,.559165) 88%,transparent);
+    background: linear-gradient(0deg, rgba(0,0,0,0.8) 75%,rgba(0,0,0,.55) 88%,transparent);
 	position: relative;
 	bottom: 0;
 	left: 0;
@@ -32,7 +32,7 @@ styling story
 .image-overlay{
     padding-top: 50px;
     padding-bottom: 1px;
-    background: linear-gradient(0deg, rgba(0,0,0,0.8) 75%,rgba(0,0,0,.6) 88%,transparent);
+    background: linear-gradient(0deg, rgba(0,0,0,0.9) 75%,rgba(0,0,0,.6) 88%,transparent);
     position: relative;
     z-index: 2;
 }
@@ -108,7 +108,7 @@ styling accomplishments
 
 .accomplishments img{
     position: relative;
-    margin-bottom: -250px;
+    margin-bottom: -223px;
     z-index: 1;
 }
 
@@ -118,7 +118,7 @@ styling accomplishments
 	line-height: 1;
 	padding: 15px;
     color: $secondary_color;
-    background: linear-gradient(0deg, rgba(0,0,0,0.8) 75%,rgba(0,0,0,.559165) 88%,transparent);
+    background: linear-gradient(0deg, rgba(0,0,0,0.8) 75%,rgba(0,0,0,.55) 88%,transparent);
 	position: relative;
 	bottom: 0;
 	left: 0;
@@ -129,7 +129,7 @@ styling accomplishments
 .accomplishments .image-overlay{
     padding-top: 50px;
     padding-bottom: 1px;
-    background: linear-gradient(0deg, rgba(0,0,0,0.8) 75%,rgba(0,0,0,.6) 88%,transparent);
+    background: linear-gradient(0deg, rgba(0,0,0,0.9) 75%,rgba(0,0,0,.6) 88%,transparent);
     position: relative;
     z-index: 2;
 }
