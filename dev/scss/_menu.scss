@@ -8,12 +8,14 @@
     font-family: $secondary_font;
     font-size: $body_font_size_mobile;
     border: solid 1px $primary_color;
-    width: 25%;
-    max-width: 100px;
+    width: 35%;
+    max-width: 150px;
     padding: 15px;
     margin: 10px;
     text-align: center;
     transition: 0.4s;
+    background-color: $secondary_color;
+    outline: none;
 }
 
 .menu-btn:hover{
@@ -85,6 +87,7 @@ styling the menu stack
 
 .menu-category{
     position: absolute;
+    float: left;
     margin: 15px;
     height: 600px;
     background-color: $secondary_color;
