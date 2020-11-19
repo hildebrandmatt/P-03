@@ -28,6 +28,10 @@ header h1{
     text-shadow: 0px 0px 5px $primary_font_color;
 }
 
+header a{
+    color: $secondary_color;
+}
+
 header h2{
     color: $primary_font_color;
     font-size: $subheader_font_size_mobile;
