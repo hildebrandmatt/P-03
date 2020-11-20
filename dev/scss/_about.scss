@@ -204,7 +204,7 @@ styling mission
 */
 
 .mission{
-    margin-top: 90px;
+    margin-top: 110px;
     background: none;
     padding: 0;
 }
@@ -263,40 +263,43 @@ styling mission
 styling accomplishments
 -----------------------
 */
+.accomplishments{
+    margin-top: 60px;
+}
 
-    .accomplishments legend{
-        font-size: 2.5em;
-    }
+.accomplishments legend{
+    font-size: 2.5em;
+}
 
-    .accomplishments .image-overlay{
-        padding-top: 0;
-        padding-bottom: 0;
-        background: none;
-        position: relative;
-        z-index: 1;
-    }
+.accomplishments .image-overlay{
+    padding-top: 0;
+    padding-bottom: 0;
+    background: none;
+    position: relative;
+    z-index: 1;
+}
 
-    .accomplishments fieldset{
-        color: $primary_color;
-        background: none;
-        border: solid 2px $primary_color;
-        width: 420px;
-        padding-right: 160px;
-        margin-top: -180px;
-    }
-    
-    .accomplishments div{
-        margin: auto;
-        text-align: center;
-        margin-top: 70px;
-        margin-bottom: 175px;
-    }
+.accomplishments fieldset{
+    color: $primary_color;
+    background: none;
+    border: solid 2px $primary_color;
+    width: 420px;
+    padding-right: 160px;
+    margin-top: -180px;
+}
 
-    .accomplishments img{
-        width: 380px;
-        z-index: 2;
-        position: relative;
-        left: 448px;
-        top: 40px;
-    }
+.accomplishments div{
+    margin: auto;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 175px;
+}
+
+.accomplishments img{
+    width: 380px;
+    z-index: 2;
+    position: relative;
+    left: 448px;
+    top: 40px;
+}
 }
