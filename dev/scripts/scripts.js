@@ -37,8 +37,10 @@ function spinBowtie() {
             spin()
         }, 200)
         setTimeout(function() {
-            resetBowtie()
-        }, 3700)
+            //resetBowtie()
+            window.location = "../index.html"
+        //}, 3700)
+        }, 3200)
     }
 }
 
