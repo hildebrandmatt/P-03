@@ -141,7 +141,8 @@ nav{
     height: 42px;
     width: 42px;
     border-radius: 50%;
-    margin: 20px;
+    margin: auto;
+    margin-top: 20px;
     //margin-left: 24px;
 }
 
@@ -344,10 +345,10 @@ nav{
       background-color: $primary_color;
       position: fixed;
       width: 100%;
-      height: 120px;
+      height: 130px;
       //left: 50%;
       //margin-left: -400px;
-      padding-top: 20px;
+      padding-top: 30px;
       justify-content: space-evenly;
     }
     
