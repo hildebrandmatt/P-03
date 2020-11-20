@@ -7,21 +7,20 @@
     <title>The Tuxedo Cat | About</title>
     <link rel="stylesheet" href="styles/styles.css">
     <!-- Put fonts here! -->
-    <link   rel="preconnect" 
-            href="https://fonts.gstatic.com">
-    <link   href="https://fonts.googleapis.com/css2?family=Lato&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap"
-            rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!--<div class="top">-->
     <header class="header-bar">
-        <img    src="images/resized/about_banner_large.jpg"
-                alt="Nice bar interior"
-                srcset="images/resized/about_banner_large.jpg 1920w,
+        <img src="images/resized/about_banner_large.jpg" alt="Nice bar interior" srcset="images/resized/about_banner_large.jpg 1920w,
                         images/resized/about_banner_medium.jpg 634w,
-                        images/resized/about_banner_small.jpg 480w"
-                sizes="(max-width: 1920px) calc(100vw) 1920px">
+                        images/resized/about_banner_small.jpg 480w" sizes="(max-width: 1920px) calc(100vw) 1920px">
         <h1><a href="index.html">The Tuxedo Cat</a></h1>
         <h2>Cat bar and lounge</h2>
         <nav class="nav-general">
@@ -30,13 +29,15 @@
                 <span></span>
                 <span></span>
                 <span></span>
-                <ul class="nav-bar">
-                    <li><a class="nav-a current-page" href="about.html">About</a></li>
-                    <li><a class="nav-a" href="menu.html">Menu</a></li>
-                    <li><a class="nav-a" href="reservation.html">Reservation</a></li>
-                    <li><a class="nav-a" href="meet_the_cats.html">Meet the cats</a></li>
-                    <li><a class="nav-a" href="contact.html">Contact</a></li>
-                    <li id="li-circle"></li>
+                <ul class="nav-bar" id="stick-this">
+                    <div class="nav-holder">
+                        <li><a class="nav-a current-page" href="about.html">About</a></li>
+                        <li><a class="nav-a" href="menu.html">Menu</a></li>
+                        <li><a class="nav-a" href="reservation.html">Reservation</a></li>
+                        <li><a class="nav-a" href="meet_the_cats.html">Meet the cats</a></li>
+                        <li><a class="nav-a" href="contact.html">Contact</a></li>
+                        <li id="li-circle"></li>
+                    </div>
                 </ul>
             </div>
         </nav>
@@ -49,11 +50,13 @@
             <div class="image-overlay">
                 <fieldset>
                     <legend>Our Story</legend>
-                    <p>The Tuxedo Cat found its humble beginnings as a small bar in the cozy corner of Meownicipal Avenue,
+                    <p>The Tuxedo Cat found its humble beginnings as a small bar in the cozy corner of Meownicipal
+                        Avenue,
                         where we served patrons with the company of our resident cat, Sherbert. Sherbert's
                         company was delightful for many of our regular patrons- he kept them company and helped them
                         de-stress after a long day.</p>
-                    <p>Thus, the idea for the Tuxedo Cat bar and lounge came to fruition. With your support, we found our
+                    <p>Thus, the idea for the Tuxedo Cat bar and lounge came to fruition. With your support, we found
+                        our
                         home in a bigger space next to our beginning location.</p>
                 </fieldset>
             </div>
@@ -63,19 +66,23 @@
             <div class="mission-text">
                 <fieldset>
                     <legend>Our Mission</legend>
-                    <p class="mission-text-description">We want to provide a space where folks can come in and relax. There's a lot of stress out there, and
+                    <p class="mission-text-description">We want to provide a space where folks can come in and relax.
+                        There's a lot of stress out there, and
                         in our experience few things help more than a good stiff drink, and a nice warm cat.</p>
-                    <p class="mission-text-description">There are also a lot of cats out there looking for a loving home. We're happy to take in as many as
-                        we can, and give them a safe and fun temporary home. But really they need you, and we're hoping that
+                    <p class="mission-text-description">There are also a lot of cats out there looking for a loving
+                        home. We're happy to take in as many as
+                        we can, and give them a safe and fun temporary home. But really they need you, and we're hoping
+                        that
                         you'll come in, fall in love with one of our lovable rascals, and take them home with you.</p>
-                        <div class="mission-cat-images">
-                            <div class="top-cat">
-                                <img src="images/resized/about_mission_large.jpg" class="cat1" alt="A cat getting chin scratches">
-                            </div>
-                            <div class="bottom-cat">
-                                <img src="images/resized/about_mission2_large.jpg" class="cat2" alt="A sleepy cat">
-                            </div>
+                    <div class="mission-cat-images">
+                        <div class="top-cat">
+                            <img src="images/resized/about_mission_large.jpg" class="cat1"
+                                alt="A cat getting chin scratches">
                         </div>
+                        <div class="bottom-cat">
+                            <img src="images/resized/about_mission2_large.jpg" class="cat2" alt="A sleepy cat">
+                        </div>
+                    </div>
                     <p class="mission-button"><a href="#0">Meet our Cats</a></p>
                 </fieldset>
 
@@ -83,11 +90,13 @@
         </section>
 
         <section class="accomplishments">
-            <img src="images/resized/cats-about_accomplishments-adopt_large.jpg" alt="A cat gazing at a butterfly on its nose">
+            <img src="images/resized/cats-about_accomplishments-adopt_large.jpg"
+                alt="A cat gazing at a butterfly on its nose">
             <div class="image-overlay">
                 <fieldset>
                     <legend>Our Accomplishments</legend>
-                    <p>In the 3 short years The Tuxedo Cat has been open, we've given 276 kitties a loving home. That's a
+                    <p>In the 3 short years The Tuxedo Cat has been open, we've given 276 kitties a loving home. That's
+                        a
                         lot!</p>
                     <p>We've also served thousands of patrons who've passed through our doors and helped them find bonds
                         with our lovable kitties.</p>
@@ -96,18 +105,23 @@
         </section>
     </div>
 
-        <footer>
-            <div class="social-icons">
-                <a href="#0"><img src="images/socialIcons/Twitter_Logo_WhiteOnImage.png" alt="twitter logo" class="social-media-icon"></a>
-                <a href="#0"><img src="images/socialIcons/f_logo_RGB-White_58.png" alt="twitter logo" class="social-media-icon"></a>
-                <a href="#0"><img src="images/socialIcons/glyph-logo_white_May2016.png" alt="twitter logo" class="social-media-icon"></a>
-            </div>
-            <p>The Tuxedo Cat - 83 Meownicipal Ave, Whiskerville, Pawnsylvania, 0W0 U1U</p>
-            <img src="images/bowtieBeansSmall.png" alt="bowtiebeans logo" class="footer-logo">
-            <p>(c) 2020 <a href="http://mhildebrand.bcitwebdeveloper.ca/">Matt Hildebrand</a> and <a href="http://skyeyang.bcitwebdeveloper.ca/">Skye Yang</a> | For educational purposes only.</p>
-            <a href="credits.html">credits</a>
-        </footer>
+    <footer>
+        <div class="social-icons">
+            <a href="#0"><img src="images/socialIcons/Twitter_Logo_WhiteOnImage.png" alt="twitter logo"
+                    class="social-media-icon"></a>
+            <a href="#0"><img src="images/socialIcons/f_logo_RGB-White_58.png" alt="twitter logo"
+                    class="social-media-icon"></a>
+            <a href="#0"><img src="images/socialIcons/glyph-logo_white_May2016.png" alt="twitter logo"
+                    class="social-media-icon"></a>
+        </div>
+        <p>The Tuxedo Cat - 83 Meownicipal Ave, Whiskerville, Pawnsylvania, 0W0 U1U</p>
+        <img src="images/bowtieBeansSmall.png" alt="bowtiebeans logo" class="footer-logo">
+        <p>(c) 2020 <a href="http://mhildebrand.bcitwebdeveloper.ca/">Matt Hildebrand</a> and <a
+                href="http://skyeyang.bcitwebdeveloper.ca/">Skye Yang</a> | For educational purposes only.</p>
+        <a href="credits.html">credits</a>
+    </footer>
 
+    <script src="./scripts/scripts.js"></script>
 </body>
 
 </html>

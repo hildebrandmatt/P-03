@@ -131,6 +131,10 @@ nav{
     opacity: 30%;
 }
 
+.nav-holder{
+  margin: 0;
+}
+
 #li-circle {
     border: 2px solid $secondary_color;
     box-shadow: 0px 0px 4px $secondary_color;
@@ -138,6 +142,7 @@ nav{
     width: 42px;
     border-radius: 50%;
     margin: 20px;
+    //margin-left: 24px;
 }
 
 .menuToggle input
@@ -263,6 +268,12 @@ nav{
     #header-title-home{
         width: 800px;
     }
+
+    .nav-general{
+        padding-top: 80px;
+        margin: auto;
+        width: 800px;
+    }
     
     .menuToggle{
         border: none;
@@ -301,6 +312,12 @@ nav{
     .header-bar h1{
         margin-top: 140px;
     }
+
+    .nav-holder{
+      width: 800px;
+      display: flex;
+      justify-content: space-evenly;
+    }
     
     .nav-bar{
         opacity: 1;
@@ -323,9 +340,15 @@ nav{
         transition: 0.3s ease;
     }
 
-    .nav-bar li{
-      position: sticky;
-      top: 0;
+    .nav-bar.stick{
+      background-color: $primary_color;
+      position: fixed;
+      width: 100%;
+      height: 120px;
+      //left: 50%;
+      //margin-left: -400px;
+      padding-top: 20px;
+      justify-content: space-evenly;
     }
     
     .nav-bar a:hover{
