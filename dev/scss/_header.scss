@@ -175,11 +175,11 @@ nav{
    background: $secondary_color;
    border-radius: 3px;
    
-   z-index: 101;
+   z-index: 99;
    
-   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-               opacity 0.55s ease;
+   //transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               //background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               //opacity 0.55s ease;
  }
  
  /* 
@@ -240,6 +240,7 @@ nav{
  .menuToggle input:checked ~ span
  {     
    transition: transform 1s;
+   z-index: 101;
  }
 
  #bg-image-home{
