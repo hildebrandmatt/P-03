@@ -55,20 +55,22 @@
 }
 
 .menu-item-description{
-    margin-top: 0;
+    margin-top: 2px;
     font-family: $secondary_font;
     font-size: 0.8em;
-    font-style: italic;
+    max-width: 86%;
 }
 
 .menu-item-name{
     margin-bottom: 2px;
     font-family: $secondary_font;
+    font-weight: bold;
 }
 
 .menu-item-price{
     margin-bottom: 2px;
     font-family: $secondary_font;
+    font-weight: bold;
 }
 
 /*
