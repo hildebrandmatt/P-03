@@ -84,13 +84,16 @@ class selectors
 
 .submit-group input{
     font-family: $secondary_font;
+    font-size: 1em;
     color: $secondary_color;
     background-color: $primary_color;
     padding: 10px 20px 10px 20px;
     border: none;
     border-radius: 12px;
-    width: 80px;
+    width: 100px;
     margin-bottom: 10px;
+
+    cursor: pointer;
 }
 
 .form-group .select-month,
