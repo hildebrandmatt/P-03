@@ -218,7 +218,7 @@ nav{
    position: fixed;
  }
  
- .menuToggle input:checked ~ .nav-bar
+ .menuToggle input:checked ~ .nav-holder .nav-bar
  {
    opacity: 1;
    transition: opacity 1s;
@@ -330,7 +330,20 @@ nav{
         top: -140px;
         font-weight: 100;
         pointer-events: all;
-        margin-top: 100px;
+        margin-top: 70px;
+    }
+
+    .nav-holder.stick{
+      background-color: $primary_color;
+      position: fixed;
+      width: 100%;
+      height: 100px;
+      top: 0px;
+      left: 0px;
+    }
+
+    .nav-holder.stick .nav-bar{
+      top: -110px;
     }
     
     .nav-bar a{
@@ -339,17 +352,6 @@ nav{
         padding-bottom: 8px;
     
         transition: 0.3s ease;
-    }
-
-    .nav-bar.stick{
-      background-color: $primary_color;
-      position: fixed;
-      width: 100%;
-      height: 130px;
-      //left: 50%;
-      //margin-left: -400px;
-      padding-top: 30px;
-      justify-content: space-evenly;
     }
     
     .nav-bar a:hover{
@@ -369,5 +371,6 @@ nav{
     #nav-ul-home{
         width: 600px;
         margin-top: 60px;
+        left: -100px;
     }
   }
