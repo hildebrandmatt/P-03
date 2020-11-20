@@ -102,6 +102,15 @@ styling mission
     border-radius: 12px;
     background-color: $secondary_color;
     padding: 6px 12px;
+    transition: 0.3s ease;
+}
+
+.mission-text a:hover{
+    font-family: $secondary_font;
+    text-decoration: none;
+    color: $secondary_color;
+    background-color: $primary-color;
+    border:solid 1px $secondary_color;
 }
 
 .mission-text .mission-button{
@@ -251,6 +260,15 @@ styling mission
     background-color: $primary_color;
     padding: 14px 28px;
     position: relative;
+    top: 26px;
+}
+
+.mission-text a:hover{
+    color: $primary_color;
+    background-color: $secondary_color;
+    padding: 14px 28px;
+    position: relative;
+    border: solid 1px $primary-color;
     top: 26px;
 }
 
