@@ -128,7 +128,7 @@ nav{
 
 .nav-bar a:hover
 {
-    opacity: 30%;
+    opacity: 0.3;
 }
 
 .nav-holder{
@@ -357,7 +357,7 @@ nav{
     
     .nav-bar a:hover{
         border-bottom: 2px solid $tertiary_color;
-        opacity: 100%;
+        opacity: 1;
     }
     
     #li-circle{
