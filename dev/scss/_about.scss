@@ -45,39 +45,35 @@ styling mission
 */
 
 .mission{
-    position: relative;
     margin: 25px 17px 0px 17px;
     background: $primary_color;
+    padding: 250px 0;
+    position: relative;
 }
 
 .mission fieldset{
     border: solid 1px $secondary_color;
-    margin: 5px 5px 8px 5px;
-	line-height: 1;
-	padding: 15px;
     color: $secondary_color;
-    background: $primary_color;
-    position: relative;
-    bottom: 0;
-	left: 0;
-    max-width: 100%;
-}
-
-.mission-text{
-    position: relative;
-    padding-top: 50px;
-    background: linear-gradient(0deg, rgba(0,0,0,0.8) 78%,rgba(0,0,0,.9) 88%,transparent);
+    margin: 5px;
     z-index: 2;
 }
 
+.mission-text{
+    background: linear-gradient(0deg, rgba(0,0,0,0.8) 78%,rgba(0,0,0,.9) 88%,transparent);
+}
+
 .top-cat{
-    position: relative;
-    margin-bottom: -50px;
+    position: absolute;
+    top: 0;
+    left: 0;
     z-index: 1;
 }
 
-.bottom-cat{
-    position: relative;
+.bottom-cat {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .mission-text a{
@@ -93,6 +89,8 @@ styling mission
     text-align: center;
     padding-top: 10px;
 }
+
+
 
 
 /*
@@ -147,37 +145,37 @@ styling story
 -----------------------
 */
 
-    .image-overlay{
-        padding-top: 0;
-        padding-bottom: 0;
-        background: none;
-        position: relative;
-        z-index: 1;
-    }
+.image-overlay{
+    padding-top: 0;
+    padding-bottom: 0;
+    background: none;
+    position: relative;
+    z-index: 1;
+}
 
-    .story fieldset{
-        color: $primary_color;
-        background: none;
-        border: solid 2px $primary_color;
-        width: 420px;
-        padding-right: 160px;
-        margin-top: -180px;
-    }
-    
-    .story div{
-        margin: auto;
-        text-align: center;
-        margin-top: 70px;
-        margin-bottom: 40px;
-    }
+.story fieldset{
+    color: $primary_color;
+    background: none;
+    border: solid 2px $primary_color;
+    width: 420px;
+    padding-right: 160px;
+    margin-top: -180px;
+}
 
-    .story img{
-        width: 380px;
-        z-index: 2;
-        position: relative;
-        left: 448px;
-        top: 40px;
-    }
+.story div{
+    margin: auto;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+.story img{
+    width: 380px;
+    z-index: 2;
+    position: relative;
+    left: 448px;
+    top: 40px;
+}
 
 
 /*
@@ -185,15 +183,49 @@ styling story
 styling mission
 -----------------------
 */
+
 .mission{
+    margin-top: 70px;
     background: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-        "textbox   textbox"
-        "textbox   textbox";
+    padding: 0;
 }
+
+.mission-text{
+    text-align: center;
+}
+
+.mission-text-description{
+    text-align: left;
+}
+
+.mission-cat-images{
+    margin: 0px 15px 20px 15px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.top-cat, .bottom-cat{
+    padding: 0px 5px 0px 5px;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.mission-text a{
+    color: $secondary_color;
+    background-color: $primary_color;
+    padding: 14px 28px;
+    position: relative;
+    top: 26px;
+}
+
+.mission-button{
+    margin: 5px;
+}
+
+/*
 
 .mission-text{
     background: none;
@@ -207,13 +239,8 @@ styling mission
     border: solid 2px $primary_color;
 }
 
-.mission-text a{
-    color: $secondary_color;
-    background-color: $primary_color;
-    padding: 14px 28px;
-    position: absolute;
-}
 
+*/
 
 /*
 -----------------------
