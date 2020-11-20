@@ -37,10 +37,10 @@ function spinBowtie() {
             spin()
         }, 200)
         setTimeout(function() {
-            //resetBowtie()
-            window.location.assign("index.html")
-        //}, 3700)
-        }, 3200)
+            resetBowtie()
+            //window.location.assign("index.html")
+        }, 3700)
+        //}, 3200)
     }
 }
 
@@ -57,7 +57,9 @@ function resetBowtie() {
 //MENU FLIP FUNCTION//
 //////////////////////
 
-if(window.location.pathname == "/menu.html") {
+var pageName = window.location.href.split("/").slice(-1)
+
+if(pageName = "menu.html") {
     var menuStack = document.getElementsByClassName("menu-category")
     
     $(document).ready(menuSort())
