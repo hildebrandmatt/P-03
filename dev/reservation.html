@@ -38,7 +38,6 @@
 </head>
 
 <body>
-    <!--<div class="top">-->
     <header class="header-bar">
         <img src="images/resized/reserve_banner_large.jpg" alt="Cat stalking a rosy drink" srcset="images/resized/reserve_banner_large.jpg 1920w,
                     images/resized/reserve_banner_med.jpg 634w,
@@ -64,7 +63,7 @@
             </div>
         </nav>
     </header>
-    <!--</div>-->
+
 
     <div class="wrapper">
         <section class="page-intro">
@@ -87,28 +86,28 @@
                     <hr>
                     <div class="form-group basic-info-group">
                         <div class="form-group name-group">
-                            <input type="text" placeholder="Name..." id="nm" name="nm">
+                            <input type="text" placeholder="Name..." id="nm" name="nm" required>
                         </div>
                         <div class="form-group email-group">
-                            <input type="email" placeholder="Email..." id="email" name="email">
+                            <input type="email" placeholder="Email..." id="email" name="email" required>
                         </div>
                         <div class="form-group phone-group">
-                            <input type="tel" placeholder="Phone..." id="phn" name="phn">
+                            <input type="tel" placeholder="Phone..." id="phn" name="phn" required>
                         </div>
                         <div class="form-group method-group">
                             <label>Preferred method of contact:</label>
                             <div class="method-click" id="reservation-click">
-                                <input type="radio" id="method-email" name="method-select-method" value="method-email">
+                                <input type="radio" id="method-email" name="method-select-method" value="method-email" required>
                                 <label for="method-email">Email</label>
-                                <input type="radio" id="method-text" name="method-select-method" value="method-text">
+                                <input type="radio" id="method-text" name="method-select-method" value="method-text" required>
                                 <label for="method-text">Text</label>
-                                <input type="radio" id="method-call" name="method-select-method" value="method-call">
+                                <input type="radio" id="method-call" name="method-select-method" value="method-call" required>
                                 <label for="method-email">Call</label>
                             </div>
                         </div>
                         <div class="form-group party-group">
                             <input type="number" placeholder="Number of people (max 4)..." id="pt" name="pt" min="1"
-                                max="4">
+                                max="4" required>
                         </div>
                         <div class="form-group comment-group">
                             <textarea name="comments" placeholder="Comments/special requests..."
@@ -123,8 +122,8 @@
                             <section class="date-select">
                                 <div class="form-group select-month">
                                     <label for="month">Month:</label>
-                                    <select name="month" id="month">
-                                        <option value="select">Select</option>
+                                    <select name="month" id="month" required>
+                                        <option value="">Select</option>
                                         <option value="Jan">January</option>
                                         <option value="Feb">February</option>
                                         <option value="Mar">March</option>
@@ -141,8 +140,8 @@
                                 </div>
                                 <div class="form-group select-day">
                                     <label for="day">Day:</label>
-                                    <select name="day" id="day">
-                                        <option value="select">Select</option>
+                                    <select name="day" id="day" required>
+                                        <option value="">Select</option>
                                         <option value="01">01</option>
                                         <option value="02">02</option>
                                         <option value="03">03</option>
@@ -178,8 +177,8 @@
                                 </div>
                                 <div class="form-group select-year">
                                     <label for="year">Year:</label>
-                                    <select name="year" id="year">
-                                        <option value="select">Select</option>
+                                    <select name="year" id="year" required>
+                                        <option value="">Select</option>
                                         <option value="2020">2020</option>
                                         <option value="2021">2021</option>
                                         <option value="2022">2022</option>
@@ -193,8 +192,8 @@
                             <section class="time-select">
                                 <div class="form-group select-hour">
                                     <label for="hour">Hour:</label>
-                                    <select name="hour" id="hour">
-                                        <option value="select">Select</option>
+                                    <select name="hour" id="hour" required>
+                                        <option value="">Select</option>
                                         <option value="01">01</option>
                                         <option value="02">02</option>
                                         <option value="03">03</option>
@@ -211,8 +210,8 @@
                                 </div>
                                 <div class="form-group select-minute">
                                     <label for="minute">Minute:</label>
-                                    <select name="minute" id="minute">
-                                        <option value="select">Select</option>
+                                    <select name="minute" id="minute" required>
+                                        <option value="">Select</option>
                                         <option value="00-minute">:00</option>
                                         <option value="15-minute">:15</option>
                                         <option value="30-minute">:30</option>
@@ -221,8 +220,8 @@
                                 </div>
                                 <div class="form-group select-ampm">
                                     <label for="ampm">AM/PM:</label>
-                                    <select name="ampm" id="ampm">
-                                        <option value="seclect">Select</option>
+                                    <select name="ampm" id="ampm" required>
+                                        <option value="">Select</option>
                                         <option value="AM">AM</option>
                                         <option value="PM">PM</option>
                                     </select>
@@ -230,7 +229,7 @@
                             </section>
                         </div>
                         <div class="agree-group agree">
-                            <input type="checkbox" id="agree-terms" name="at[]">
+                            <input type="checkbox" id="agree-terms" name="at[]" required>
                             <label for="agree-terms">By submitting a reservation request, you agree to our <a
                                     href="#0">terms and conditions.</a></label>
                         </div>

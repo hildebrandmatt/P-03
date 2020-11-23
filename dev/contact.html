@@ -38,7 +38,6 @@
 </head>
 
 <body>
-    <!--<div class="top">-->
     <header class="header-bar">
         <img src="images/resized/menu-contact_banner_large.jpg" alt="Cat sniffing a cocktail glass" srcset="images/resized/menu-contact_banner_large.jpg 1920w,
                             images/resized/menu-contact_banner_med.jpg 792w,
@@ -64,7 +63,6 @@
             </div>
         </nav>
     </header>
-    <!--</div>-->
 
     <div class="wrapper">
         <section class="page-intro contact-us">
@@ -102,22 +100,22 @@
                     <h3>Your Information</h3>
                     <div class="form-group basic-info-group">
                         <div class="form-group name-group">
-                            <input type="text" placeholder="Name..." id="nm" name="nm">
+                            <input type="text" placeholder="Name..." id="nm" name="nm" required>
                         </div>
                         <div class="form-group email-group">
-                            <input type="email" placeholder="Email..." id="email" name="email">
+                            <input type="email" placeholder="Email..." id="email" name="email" required>
                         </div>
                         <div class="form-group phone-group">
-                            <input type="tel" placeholder="Phone..." id="phn" name="phn">
+                            <input type="tel" placeholder="Phone..." id="phn" name="phn" required>
                         </div>
                         <div class="form-group method-group">
                             <label>Preferred method of contact:</label>
                             <div class="method-click">
-                                <input type="radio" id="method-email" name="method-select-method" value="method-email">
+                                <input type="radio" id="method-email" name="method-select-method" value="method-email" required>
                                 <label for="method-email">Email</label>
-                                <input type="radio" id="method-text" name="method-select-method" value="method-text">
+                                <input type="radio" id="method-text" name="method-select-method" value="method-text" required>
                                 <label for="method-text">Text</label>
-                                <input type="radio" id="method-call" name="method-select-method" value="method-call">
+                                <input type="radio" id="method-call" name="method-select-method" value="method-call" required>
                                 <label for="method-call">Call</label>
                             </div>
                         </div>
